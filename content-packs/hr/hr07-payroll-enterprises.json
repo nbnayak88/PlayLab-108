@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr07",
+  "status": "synthetic-prototype",
+  "stream": "HR07",
+  "label": "Payroll Enterprises",
+  "terms": [
+    "Payroll area",
+    "Wage type",
+    "Payroll schema",
+    "PCR",
+    "Retrocalculation",
+    "Replication",
+    "Payroll Control Center",
+    "Posting",
+    "Reconciliation",
+    "Pay period",
+    "Employee master data",
+    "Payroll result"
+  ],
+  "descs": [
+    "Group for payroll processing",
+    "Earning or deduction element",
+    "Payroll calculation flow",
+    "Personnel calculation rule",
+    "Reprocessing past periods",
+    "Transfer of employee data",
+    "Payroll monitoring and alerts",
+    "Transfer to accounting",
+    "Comparison of expected and actual",
+    "Scheduled calculation interval",
+    "Employee input information",
+    "Calculated payment output"
+  ],
+  "stages": [
+    "Validate employee data",
+    "Replicate changes",
+    "Prepare payroll",
+    "Run payroll",
+    "Reconcile results",
+    "Complete posting"
+  ],
+  "facts": [
+    [
+      "Which object groups employees for payroll processing?",
+      "Payroll area",
+      "Agent trace",
+      "Foundation object"
+    ],
+    [
+      "What represents an earning or deduction?",
+      "Wage type",
+      "Workflow approval",
+      "Joule skill"
+    ],
+    [
+      "What recalculates prior payroll periods?",
+      "Retrocalculation",
+      "Role-based permissions",
+      "Tokenization"
+    ],
+    [
+      "Which activity checks payroll totals?",
+      "Reconciliation",
+      "Prompt design",
+      "Recruitment"
+    ]
+  ],
+  "topics": [
+    "Payroll configuration",
+    "Wage types",
+    "Schema processing",
+    "Personnel calculation rules",
+    "Payroll calendars",
+    "Retroactivity",
+    "EC–payroll replication",
+    "Payroll controls",
+    "Bank and posting outputs",
+    "Payroll reconciliation",
+    "Payroll exceptions",
+    "Country localization"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
