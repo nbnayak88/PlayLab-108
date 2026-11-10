@@ -20,6 +20,7 @@ jobs:
           node --check app.js
           node --check hr-packs.js
           node --check engines/quiz-arena.js
+          node --check engines/hr01-decision-sprint.js
           node - <<'NODE'
           const fs=require('fs');
           const registry=JSON.parse(fs.readFileSync('standards/game-registry.json','utf8'));
@@ -29,6 +30,8 @@ jobs:
           if(manifest.streams.length!==12) throw Error('Expected 12 HR streams');
           const engine=fs.readFileSync('engines/quiz-arena.js','utf8');
           for(let n=1;n<=9;n++)if(!engine.includes('for(let n=1;n<=9;n++)'))throw Error('Missing Quiz Arena engine registry');
+          const hr01=JSON.parse(fs.readFileSync('content-packs/hr01/PL108-001.json','utf8'));
+          if(hr01.gameId!=='PL108-001'||hr01.cases.length<10||hr01.cases.some(x=>!x.scenario||!x.correct||x.distractors.length<2||!x.rationale))throw Error('Invalid HR01 Game 001 cases');
           const runtime=fs.readFileSync('app.js','utf8');
           if(!runtime.includes('window.PLAYLAB_GAME_MODULES[g.templateId]'))throw Error('Runtime does not dispatch dedicated engines');
           for(const stream of manifest.streams){
