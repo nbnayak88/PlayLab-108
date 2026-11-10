@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr06",
+  "status": "synthetic-prototype",
+  "stream": "HR06",
+  "label": "Learning & Mobility",
+  "terms": [
+    "Learning item",
+    "Curriculum",
+    "Assignment",
+    "Completion",
+    "Certification",
+    "Skill",
+    "Learning path",
+    "Compliance training",
+    "Recommendation",
+    "Mobility",
+    "Opportunity",
+    "Learning record"
+  ],
+  "descs": [
+    "Unit of learning content",
+    "Grouped learning structure",
+    "Required or selected activity",
+    "Finished learning activity",
+    "Recognized qualification",
+    "Demonstrated capability",
+    "Ordered development experiences",
+    "Mandatory policy education",
+    "Suggested learning experience",
+    "Role or assignment movement",
+    "Possible growth experience",
+    "Evidence of learning activity"
+  ],
+  "stages": [
+    "Identify skill need",
+    "Assign learning",
+    "Launch experience",
+    "Practice",
+    "Validate completion",
+    "Apply capability"
+  ],
+  "facts": [
+    [
+      "What groups several learning activities?",
+      "Curriculum",
+      "Payroll schema",
+      "Requisition"
+    ],
+    [
+      "What confirms an activity was finished?",
+      "Completion record",
+      "Job posting",
+      "Time clock"
+    ],
+    [
+      "What supports a targeted development journey?",
+      "Learning path",
+      "Random menu",
+      "Payment file"
+    ],
+    [
+      "What connects people with internal career opportunities?",
+      "Talent mobility",
+      "Payroll retro",
+      "Tax code"
+    ]
+  ],
+  "topics": [
+    "Learning administration",
+    "Course assignments",
+    "Learning curricula",
+    "Skills",
+    "Certifications",
+    "Compliance training",
+    "Learner experience",
+    "Opportunity marketplace",
+    "Internal mobility",
+    "Learning reporting",
+    "Content governance",
+    "Learning effectiveness"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
