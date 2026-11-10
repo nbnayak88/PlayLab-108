@@ -15,9 +15,10 @@ function finish(win,reason){if(done)return;done=true;ctx.finish(win,reason,Math.
 function next(ok,points=10){
 if(ok){score+=points;streak++}else{streak=0;score=Math.max(0,score-5);lives--}
 round++;stats();
+if(id===2&&!ok)return finish(false,"Millionaire challenge ended after an incorrect HR architecture decision.");
 if(id===6&&lives<=0)return finish(false,"Three HR decisions were incorrect. Review access, effective dating and governance.");
 if(id===9&&boss<=0)return finish(true,"HR architecture risk eliminated by evidence-based decisions.");
-if(round>=total)return finish(score+bank>=Math.ceil(total*.7)*10,"Completed "+total+" contextual HR decisions. Score: "+(score+bank));
+if(round>=total)return finish(id===8?streak>=3:score+bank>=Math.ceil(total*.7)*10,"Completed "+total+" contextual HR decisions. Score: "+(score+bank));
 draw();
 }
 function ask(c,points=10,strict=false){
@@ -40,13 +41,13 @@ board.append(choices,feedback,continueBtn);
 function draw(){
 if(done||!cases.length)return;stats();
 const c=cases[round%cases.length];
-if(id===2){prompt.textContent="HR Architecture Millionaire · Level "+(round+1);board.replaceChildren(make("p","One wrong decision ends this attempt. You may use one 50:50 lifeline."),button("Accept level "+(round+1)+" →",()=>ask(c,10+round*3,true)));return}
+if(id===2){prompt.textContent="HR Architecture Millionaire · Level "+(round+1);board.replaceChildren(make("p","One incorrect decision ends this run. Each level increases your points."),button("Accept level "+(round+1)+" →",()=>ask(c,10+round*3,true)));return}
 if(id===3){prompt.textContent="HR Jeopardy · Select a challenge category";board.replaceChildren();const cats=["Employee lifecycle","Data governance","Security & workflow"];for(let i=0;i<3;i++){const n=i*3+(round%3);board.append(button(cats[i]+" · "+(i+1)*100,()=>ask(c,10+i*5)))}return}
 if(id===4){prompt.textContent="HR Wheel · Spin for your architecture challenge";board.replaceChildren(button("🎡 Spin and reveal scenario",()=>ask(c)));return}
 if(id===5){prompt.textContent="HR True/False · Evaluate the proposed decision";const proposal=round%2===0?c.correct:c.distractors[0],truth=round%2===0;board.replaceChildren(make("p",c.scenario),make("p","Proposed response: "+proposal));for(const [label,val] of [["Appropriate",true],["Inappropriate",false]])board.append(button(label,()=>{const ok=val===truth;board.replaceChildren(make("p",ok?"Correct assessment.":"Incorrect assessment."),make("p","Recommended: "+c.correct),make("p",c.rationale),button("Continue →",()=>next(ok)))}));return}
 if(id===6){prompt.textContent="Last HR Architect Standing · "+lives+" lives";ask(c);return}
 if(id===7){prompt.textContent="Risk Your Points · Choose an HR decision stake";board.replaceChildren(make("p",c.scenario));for(const stake of [10,20,30])board.append(button("Wager "+stake+" points",()=>ask(c,stake)));return}
-if(id===8){prompt.textContent="HR Governance Bingo · Complete nine evidence-based decisions";ask(c);return}
+if(id===8){prompt.textContent="HR Governance Bingo · Build a streak of three correct decisions to claim a line";ask(c);return}
 if(id===9){prompt.textContent="HR Risk Boss Battle · Remaining risk "+boss;ask(c);return}
 ask(c);
 }
