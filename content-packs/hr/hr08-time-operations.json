@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr08",
+  "status": "synthetic-prototype",
+  "stream": "HR08",
+  "label": "Time & Operations",
+  "terms": [
+    "Time profile",
+    "Time type",
+    "Time account",
+    "Time sheet",
+    "Absence",
+    "Attendance",
+    "Work schedule",
+    "Time valuation",
+    "Holiday calendar",
+    "Approval",
+    "Overtime",
+    "Time event"
+  ],
+  "descs": [
+    "Set of time-management rules",
+    "Category of recorded time",
+    "Balance of time entitlement",
+    "Recorded work-time entries",
+    "Period away from work",
+    "Recorded presence at work",
+    "Expected pattern of work",
+    "Calculation of time outcomes",
+    "Localized nonworking days",
+    "Authorization for time request",
+    "Hours beyond scheduled work",
+    "Recorded clock action"
+  ],
+  "stages": [
+    "Define schedules",
+    "Configure time types",
+    "Capture attendance",
+    "Submit time requests",
+    "Approve and evaluate",
+    "Reconcile outcomes"
+  ],
+  "facts": [
+    [
+      "What stores an employee's accrued leave balance?",
+      "Time account",
+      "Candidate pool",
+      "Agent tool"
+    ],
+    [
+      "What defines expected working patterns?",
+      "Work schedule",
+      "Salary statement",
+      "Interview question"
+    ],
+    [
+      "What records work hours for a period?",
+      "Time sheet",
+      "Succession chart",
+      "Requisition"
+    ],
+    [
+      "What calculates payable or credited time from entries?",
+      "Time valuation",
+      "Randomization",
+      "Career path"
+    ]
+  ],
+  "topics": [
+    "Time profiles",
+    "Work schedules",
+    "Time-off types",
+    "Time accounts",
+    "Time sheets",
+    "Clock events",
+    "Time valuation",
+    "Leave approvals",
+    "Overtime",
+    "Holiday calendars",
+    "Exceptions",
+    "Payroll time integration"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
