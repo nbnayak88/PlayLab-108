@@ -21,6 +21,7 @@ jobs:
           node --check hr-packs.js
           node --check engines/quiz-arena.js
           node --check engines/hr01-decision-sprint.js
+          node --check engines/hr01-quiz-arena.js
           node --check engines/break-even-simulator.js
           node - <<'NODE'
           const fs=require('fs');
@@ -33,6 +34,8 @@ jobs:
           for(let n=1;n<=9;n++)if(!engine.includes('for(let n=1;n<=9;n++)'))throw Error('Missing Quiz Arena engine registry');
           const hr01=JSON.parse(fs.readFileSync('content-packs/hr01/PL108-001.json','utf8'));
           if(hr01.gameId!=='PL108-001'||hr01.cases.length<10||hr01.cases.some(x=>!x.scenario||!x.correct||x.distractors.length<2||!x.rationale))throw Error('Invalid HR01 Game 001 cases');
+          const quiz=JSON.parse(fs.readFileSync('content-packs/hr01/quiz-arena-002-009.json','utf8'));
+          if(quiz.stream!=='HR01'||quiz.cases.length<10||quiz.cases.some(x=>!x.scenario||!x.correct||!x.rationale||x.distractors.length<2))throw Error('Invalid contextual HR01 quiz pack');
           const investment=JSON.parse(fs.readFileSync('content-packs/hr01/PL108-107.json','utf8'));
           if(investment.gameId!=='PL108-107'||investment.scenarios.length<4||investment.scenarios.some(x=>x.investment<=0||x.monthlyVolume<=0||x.targetMonths<=0))throw Error('Invalid investment simulation scenarios');
           const runtime=fs.readFileSync('app.js','utf8');
