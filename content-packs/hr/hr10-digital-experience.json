@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr10",
+  "status": "synthetic-prototype",
+  "stream": "HR10",
+  "label": "Digital Employee Experience",
+  "terms": [
+    "Employee experience",
+    "Journey",
+    "Touchpoint",
+    "Self-service",
+    "Service request",
+    "Knowledge article",
+    "Digital adoption",
+    "Accessibility",
+    "Feedback",
+    "Experience measure",
+    "Personalization",
+    "Case management"
+  ],
+  "descs": [
+    "Perception of workplace interactions",
+    "Sequence of employee experiences",
+    "Individual interaction point",
+    "Employee-led service action",
+    "Request for HR assistance",
+    "Documented help content",
+    "Effective use of digital tools",
+    "Usability for diverse needs",
+    "Input on a service experience",
+    "Metric of user perception",
+    "Context-aware presentation",
+    "Tracking service issues to resolution"
+  ],
+  "stages": [
+    "Discover employee need",
+    "Map journey",
+    "Design touchpoints",
+    "Enable self-service",
+    "Capture feedback",
+    "Improve experience"
+  ],
+  "facts": [
+    [
+      "What describes linked moments across an employee's interaction?",
+      "Employee journey",
+      "Payroll schema",
+      "Source code branch"
+    ],
+    [
+      "What enables employees to complete routine actions directly?",
+      "Self-service",
+      "Manual dependency",
+      "Hidden menu"
+    ],
+    [
+      "What records a request through resolution?",
+      "Service case",
+      "Pay period",
+      "Requisition"
+    ],
+    [
+      "What makes experiences usable for diverse abilities?",
+      "Accessibility",
+      "Only animation",
+      "Complex jargon"
+    ]
+  ],
+  "topics": [
+    "Employee journeys",
+    "Service delivery",
+    "Self-service",
+    "Knowledge content",
+    "Service cases",
+    "Digital adoption",
+    "Accessible experiences",
+    "Personalization",
+    "Experience metrics",
+    "Employee communications",
+    "Feedback loops",
+    "Cross-channel support"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
