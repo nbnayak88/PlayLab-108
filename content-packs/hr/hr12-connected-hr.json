@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr12",
+  "status": "synthetic-prototype",
+  "stream": "HR12",
+  "label": "Connected HR",
+  "terms": [
+    "Integration",
+    "API",
+    "Event",
+    "Middleware",
+    "Data contract",
+    "Mapping",
+    "Monitoring",
+    "Identity",
+    "Error queue",
+    "Master data",
+    "Reconciliation",
+    "Architecture"
+  ],
+  "descs": [
+    "Connection between systems",
+    "Programmatic service interface",
+    "Notification of a state change",
+    "Integration processing layer",
+    "Defined exchange format and rules",
+    "Source-to-target field transformation",
+    "Observation of integration health",
+    "Verified digital principal",
+    "Holding area for failed messages",
+    "Authoritative shared business information",
+    "Comparison of exchanged records",
+    "Structured design of connected components"
+  ],
+  "stages": [
+    "Identify source of truth",
+    "Define integration contract",
+    "Map data",
+    "Secure connectivity",
+    "Test exchanges",
+    "Monitor and reconcile"
+  ],
+  "facts": [
+    [
+      "What formally describes data exchanged between systems?",
+      "Data contract",
+      "Badge",
+      "Time-off balance"
+    ],
+    [
+      "What transforms source fields into target fields?",
+      "Mapping",
+      "Calibrating",
+      "Gamification"
+    ],
+    [
+      "What should identify the authoritative origin for shared data?",
+      "Source of truth",
+      "Random draw",
+      "Timer"
+    ],
+    [
+      "What helps find failed interface messages?",
+      "Integration monitoring",
+      "Performance rating",
+      "Learning completion"
+    ]
+  ],
+  "topics": [
+    "Integration",
+    "API",
+    "Event",
+    "Middleware",
+    "Data contract",
+    "Mapping",
+    "Monitoring",
+    "Identity",
+    "Error queue",
+    "Master data",
+    "Reconciliation",
+    "Architecture"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "Universal game mechanics remain unchanged; content requires expert review."
+}
