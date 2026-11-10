@@ -19,7 +19,7 @@ if(id===2&&!ok)return finish(false,"Millionaire challenge ended after an incorre
 if(id===6&&lives<=0)return finish(false,"Three HR decisions were incorrect. Review access, effective dating and governance.");
 if(id===8&&marks.some(Boolean)&&[...Array(3)].some((_,i)=>[0,1,2].every(j=>marks[i*3+j])||[0,1,2].every(j=>marks[j*3+i]))||id===8&&marks[0]&&marks[4]&&marks[8]||id===8&&marks[2]&&marks[4]&&marks[6])return finish(true,"Completed a real bingo line.");
 if(id===9&&boss<=0)return finish(true,"HR architecture risk eliminated by evidence-based decisions.");
-if(round>=total)return finish(id===8?false:id===7?bank>=60:id===9?boss<=0:score>=Math.ceil(total*.7)*10,"Completed "+total+" contextual HR decisions. Score: "+(score+bank));
+if(round>=total)return finish(id===8?false:id===7?bank>=60:id===9?boss<=0:score>=Math.ceil(total*.7)*10,"Completed "+total+" contextual HR decisions. Score: "+(score+(id===7?bank:0)));
 draw();
 }
 function ask(c,points=10,strict=false){
