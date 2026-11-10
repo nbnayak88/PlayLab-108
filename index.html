@@ -1,9 +1,99 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SuccessLabs PlayLab 108</title><style>
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
-:root{font-family:Comfortaa,system-ui,sans-serif;color:#14283b;background:#eef7ff}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:4;background:linear-gradient(105deg,#0369a1,#4f46e5);color:white;padding:16px 22px;display:flex;justify-content:space-between;gap:16px;align-items:center}h1{font-size:22px;margin:0}header p{font-size:11px;margin:7px 0 0}.brand{font-weight:bold;text-align:right;font-size:13px}main{max-width:1080px;margin:auto;padding:22px}.panel{background:white;border:1px solid #d3e3f3;border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 5px 18px #1d4ed815}label{display:block;font-size:13px;font-weight:bold;margin:8px 0}select,input,button{font:inherit}select,input{border:1px solid #94a3b8;border-radius:10px;padding:11px;width:100%;background:white}button{border:0;background:#075cba;color:white;border-radius:11px;padding:11px 14px;cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}button.alt{background:#e2ecff;color:#133b6e}.toolbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.stats{display:flex;flex-wrap:wrap;gap:10px}.pill{padding:8px 12px;background:#e4f1ff;border-radius:99px;font-size:12px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:10px}.tile{background:#f2f7ff;color:#163957;border:1px solid #bad5f0;min-height:70px}.tile.active{background:#c5e6ff}.tile.good{background:#b4f5d0}.tile.bad{background:#ffd0d0}.grid9{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:360px}.grid9 button{min-height:75px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}.status{min-height:38px;font-size:14px}.muted{color:#54697b;font-size:12px}.progress{height:10px;border-radius:10px;background:#d9e6f2;overflow:hidden}.progress div{height:100%;background:#0d9b78}footer{text-align:center;padding:20px;color:#456;font-size:11px}.hide{display:none}@media(max-width:500px){h1{font-size:17px}.panel{padding:13px}}</style></head><body>
-<header><div><h1>PlayLab 108</h1><p>Universal games · 3 interchangeable SAP learning packs</p></div><div class="brand">SuccessLabs Academy<br><small>Architecting experiences for a better world.</small></div></header>
-<main><section class="panel"><div class="toolbar"><div><label for="pack">Content pack</label><select id="pack"><option value="joule">SAP Joule Studio</option><option value="ec">Employee Central Core</option><option value="ecp">Employee Central Payroll</option></select></div><div><label for="family">Game family</label><select id="family"><option value="">All 12 families</option></select></div><div><label for="search">Find a game</label><input id="search" placeholder="Search 108 templates"></div></div><p class="muted">Switch content packs without changing the selected game engine. Scenarios are synthetic and simplified for learning.</p><div class="stats"><span class="pill" id="total">108 templates</span><span class="pill" id="packLabel">Joule Studio</span><span class="pill" id="finished">0 completed locally</span></div></section>
-<section class="panel" id="catalog"><h2>Choose a game</h2><div class="cards" id="games"></div></section>
-<section class="panel hide" id="play"><div class="row"><button class="alt" id="back">← Library</button><button class="alt" id="restart">Restart</button><button class="alt" id="hint">Hint (-5)</button></div><h2 id="gameTitle"></h2><p class="muted" id="mechanic"></p><div class="stats"><span class="pill" id="score">Score: 0</span><span class="pill" id="timer">Time: 0:00</span><span class="pill" id="round">Round 1</span></div><div class="progress"><div id="bar" style="width:0%"></div></div><h3 id="prompt"></h3><div id="board"></div><p class="status" id="message" role="status" aria-live="polite"></p><div id="end" class="hide"></div></section></main>
-<footer>SuccessLabs Academy · PlayLab 108 · Synthetic instructional content · Affirmation: I learn by doing. · Gratitude: Every attempt teaches me. · Intention: Apply with care.</footer>
-<script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SuccessLabs Academy PlayLab 108 — twelve HR learning streams powered by universal, reusable games.">
+<meta name="theme-color" content="#0a71bf">
+<title>SuccessLabs PlayLab 108 — 12 HR Learning Streams</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--brand-a:#0277bd;--brand-b:#6246ea;--ink:#163351;--muted:#536c83;--paper:#f0f7ff;--line:#c7deef;--gold:#f5c44d;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:linear-gradient(160deg,#edf9ff,#f8f3ff 78%);font-family:Comfortaa,system-ui,sans-serif;font-size:14px}
+button,select,input{font:inherit}
+button,a,select,input{outline-offset:3px}
+a{color:#175cb1}
+a:hover{text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:linear-gradient(108deg,var(--brand-a),var(--brand-b));color:white;padding:13px 24px 19px;box-shadow:0 9px 24px #0d388d26}
+.brand-row{display:flex;justify-content:space-between;align-items:center;gap:14px;max-width:1360px;margin:auto}
+.logo-mark{display:inline-flex;border:2px solid #fff9;align-items:center;justify-content:center;border-radius:15px;width:54px;height:54px;background:#ffffff20;font-weight:700;font-size:16px;letter-spacing:-1px}
+.brand-right{display:flex;align-items:center;gap:12px;text-align:right}
+.brand-right small{font-size:10px;display:block;margin-top:6px}
+h1{font-size:clamp(17px,2.8vw,26px);margin:0 0 5px;letter-spacing:-.5px}
+.header-sub{font-size:11px;margin:0;opacity:.92}
+.track-one,.track-two{position:absolute;left:0;right:0;bottom:9px;height:2px;background:#ffffff68}
+.track-two{bottom:0;height:5px;background:#ffffff4d}
+#globalProgress{height:100%;width:0;background:var(--gold);transition:width .35s ease}
+.layout{display:grid;grid-template-columns:205px minmax(0,1fr);gap:23px;max-width:1360px;margin:0 auto;padding:24px}
+.sidebar{position:sticky;top:112px;align-self:start;padding:18px;background:#ffffffec;border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 26px #20518612}
+.sidebar b{display:block;font-size:12px;margin-bottom:16px;color:#234763}
+.sidebar a{display:block;padding:12px;border-radius:9px;text-decoration:none;font-size:12px;font-weight:700}
+.sidebar a:hover,.sidebar a:focus{background:#e1f2ff}
+.content{min-width:0}
+.panel{background:#ffffffea;border:1px solid var(--line);border-radius:19px;padding:22px;margin-bottom:18px;box-shadow:0 6px 25px #123e7c12;scroll-margin-top:112px}
+.hero{background:linear-gradient(120deg,#e9f8ff,#f6f0ff);border-color:#bbd7f1}
+.hero h2{font-size:clamp(20px,3.6vw,33px);margin:0 0 12px}
+.hero p{line-height:1.7;color:#395b79;max-width:760px}
+.kicker{font-weight:700;text-transform:uppercase;color:#3b66af;letter-spacing:.1em;font-size:10px;margin-bottom:9px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip,.pill{background:#e7f1ff;color:#294c75;padding:9px 13px;border-radius:999px;font-size:11px;font-weight:700}
+.highlight{color:#8a5a03;background:#fff1bc}
+.toolbar{display:grid;grid-template-columns:minmax(220px,1.6fr) 1fr 1fr;gap:14px}
+label{display:block;font-size:12px;font-weight:700;margin-bottom:9px}
+input,select{width:100%;border:1px solid #99b7d0;background:#fff;padding:12px 14px;border-radius:11px;min-height:46px;color:var(--ink)}
+button{cursor:pointer;border:0;background:linear-gradient(110deg,var(--brand-a),var(--brand-b));color:white;padding:12px 14px;border-radius:12px;font-weight:700;transition:transform .13s ease}
+button:hover:not(:disabled){transform:translateY(-1px)}
+button:disabled{opacity:.47;cursor:not-allowed}
+button.alt{background:#e5efff;color:#234c83}
+.muted{font-size:12px;color:var(--muted);line-height:1.65}
+.stats{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:11px}
+.tile{background:#f1f7ff;color:#1b4163;border:1px solid #b7d4ef;min-height:72px;text-align:left;line-height:1.6}
+.tile:focus-visible{outline:3px solid #ffbd40}
+.tile.good{background:#c5f7dc}.tile.bad{background:#ffdad9}
+.grid9{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;max-width:360px}
+.grid9 button{min-height:75px}
+.row{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:10px 0}
+.progress{background:#ddeafa;height:10px;overflow:hidden;border-radius:99px}
+.progress div{background:linear-gradient(90deg,var(--brand-a),var(--brand-b));height:100%;width:0;transition:width .25s}
+.status{min-height:44px;margin-top:12px;font-weight:700}
+.hide{display:none!important}
+#gameTitle{font-size:22px}
+.quote{text-align:center;color:#3c648b;font-size:12px;font-style:italic}
+footer{position:sticky;bottom:0;z-index:4;background:#ffffffed;border-top:1px solid #c4d7e6;text-align:center;padding:11px 16px;color:#315879;font-size:10px;box-shadow:0 -4px 18px #1255a310}
+.notice{background:#fff9ec;border:1px solid #f1dca7;padding:11px 13px;border-radius:12px;color:#6f5521}
+#docsLink{font-weight:700}
+@media(max-width:900px){.layout{grid-template-columns:1fr;padding:14px}.sidebar{position:static;display:flex;flex-wrap:wrap;gap:4px;padding:8px}.sidebar b{width:100%;margin:8px}.sidebar a{padding:9px}.toolbar{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){header{padding:12px 12px 17px}.logo-mark{width:43px;height:43px;font-size:12px}.brand-right small{font-size:9px}.header-sub{font-size:9px}.brand-right{gap:7px}.toolbar{grid-template-columns:1fr}.panel{padding:15px}.cards{grid-template-columns:1fr 1fr}.tile{font-size:11px;min-height:73px;padding:9px}.layout{gap:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style></head>
+<body>
+<header><div class="brand-row">
+<div><h1>SuccessLabs PlayLab 108</h1><p class="header-sub">12 HR Streams · 108 reusable game templates · 5–30-minute missions</p></div>
+<div class="brand-right"><div><strong>SuccessLabs Academy</strong><small>Architecting Experiences for a Better World</small></div><div class="logo-mark" title="SuccessLabs Academy text mark — replace with approved logo asset">SLA</div></div>
+</div><div class="track-one" aria-hidden="true"></div><div class="track-two" aria-label="Learning completion progress"><div id="globalProgress"></div></div></header>
+<div class="layout">
+<nav class="sidebar" aria-label="Learning hub navigation"><b>EXPLORE PLAYLAB</b><a href="#overview">Discover</a><a href="#configure">Choose HR Stream</a><a href="#catalog">108 Game Templates</a><a href="#play">Game Arena</a><a href="#resources">Game Standards</a></nav>
+<main class="content">
+<section id="overview" class="panel hero"><div class="kicker">SuccessLabs SuperLabs · Learn by Doing</div><h2>One game engine. Twelve HR streams. Infinite experiments.</h2><p id="quote" class="quote">“Every challenge is an opportunity to create capability.”</p><div class="chips"><span class="chip">12 learning streams</span><span class="chip">108 game definitions</span><span class="chip">1,296 potential applications</span><span class="chip highlight">Applied learning</span></div></section>
+<section id="configure" class="panel"><h2>Select your learning stream</h2><div class="toolbar"><div><label for="pack">HR stream / content pack</label><select id="pack"><option value="hr01">HR01 · AWF Foundations & Core HR</option>
+<option value="hr02">HR02 · Talent Acquisition</option>
+<option value="hr03">HR03 · High Performance Organization</option>
+<option value="hr04">HR04 · Growth & Leadership</option>
+<option value="hr05">HR05 · Rewards & Performance</option>
+<option value="hr06">HR06 · Learning & Mobility</option>
+<option value="hr07">HR07 · Payroll Enterprises</option>
+<option value="hr08">HR08 · Time & Operations</option>
+<option value="hr09">HR09 · Workforce Intelligence</option>
+<option value="hr10">HR10 · Digital Employee Experience</option>
+<option value="hr11">HR11 · AI-Powered HR</option>
+<option value="hr12">HR12 · Connected HR</option></select></div><div><label for="family">Game family</label><select id="family"><option value="">All 12 game families</option></select></div><div><label for="search">Search 108 game templates</label><input id="search" placeholder="Name or game ID" autocomplete="off"></div></div><p class="muted">Switching the HR stream changes its vocabulary, synthetic challenges and learning sequences, not the game mechanics.</p><div class="stats"><span class="pill" id="total">108 templates</span><span class="pill" id="packLabel">HR01</span><span class="pill" id="finished">0 completed locally</span><span class="pill" id="progressLabel">0% pack completion</span></div></section>
+<section id="catalog" class="panel"><h2>Game library</h2><p class="muted">Select any template to start a short prototype game. All 108 IDs exist in the registry; distinct final mechanics for every game are still in development.</p><div class="cards" id="games"></div></section>
+<section id="play" class="panel hide"><div class="row"><button class="alt" id="back">← Game Library</button><button class="alt" id="restart">Restart</button><button class="alt" id="hint">Hint (−5)</button></div><h2 id="gameTitle"></h2><p class="muted" id="mechanic"></p><div class="stats"><span class="pill" id="score">Score 0</span><span class="pill" id="timer">Time 0:00</span><span class="pill" id="round">Round 1</span></div><div class="progress"><div id="bar"></div></div><h3 id="prompt"></h3><div id="board"></div><p class="status" id="message" role="status" aria-live="polite"></p><div class="hide" id="end"></div></section>
+<section id="resources" class="panel"><h2>Source, standards &amp; evidence</h2><p><a id="docsLink" href="https://github.com/nbnayak88/PlayLab-108/tree/main/examples/hr-streams">Open stream specification ↗</a></p><p><a href="https://github.com/nbnayak88/PlayLab-108/blob/main/standards/PLAYLAB-108-MASTER.md">Universal game standards</a> · <a href="https://github.com/nbnayak88/PlayLab-108/blob/main/examples/hr-streams/README.md">HR12-stream mapping</a> · <a href="https://github.com/nbnayak88/PlayLab-108">GitHub source</a></p><p class="muted notice">Prototype disclaimer: This hub implements simplified family-level game loops, not 108 fully unique production games. Content is fictional and educational; game scores are not SAP certifications or proof of enterprise configuration skills.</p></section>
+</main></div>
+<footer><span>Affirmation: I can learn. · Visualization: I see the outcome. · Gratitude: Every attempt counts. · Intention: Apply what I learn.</span></footer>
+<script src="hr-packs.js"></script><script src="app.js"></script>
+</body></html>
