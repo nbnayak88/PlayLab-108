@@ -19,6 +19,24 @@ for(const file of scripts)assert(html.includes(file),file+" not loaded");
 assert(html.includes("https://hub.successlabsacademy.com/web/checkout/694af8798dd872a219700dd3"),"CTA missing");
 const runtime=read("app.js");
 assert(runtime.includes('window.PLAYLAB_HR01_GAME_MODULES[g.templateId]'),"HR01 dispatch missing");
+
+// Mechanics-specific release regression gates (static contracts; browser testing is separate).
+const quizEngine=read("engines/hr01-quiz-arena.js");
+const contracts={
+ "002 50:50 lifeline":'Use 50:50 lifeline',
+ "003 locked Jeopardy tiles":'b.disabled=used.has(key)',
+ "004 random wheel selection":'Math.floor(Math.random()*cases.length)',
+ "005 true/false choices":'["Appropriate",true]',
+ "006 life elimination":'lives===0',
+ "007 bank scoring":'id===7?bank:score',
+ "008 real 3x3 grid":'grid-template-columns:repeat(3',
+ "008 bingo line evaluation":'lines(marks)',
+ "009 boss HP victory":'hp===0',
+ "single-answer uniqueness":'new Set([c.correct,...c.distractors]'
+};
+for(const [name,needle] of Object.entries(contracts))assert(quizEngine.includes(needle),"Missing mechanics contract: "+name);
+assert(!quizEngine.includes("score+bank"),"Wager bank must not inflate unrelated game scores");
+
 const statuses=Object.fromEntries(expected.map(id=>[id,{schema:"pass",registered:"pass",browser:"not-run",subjectExpert:"pending",release:"blocked"}]));
 const report={generatedAt:new Date().toISOString(),batch:"HR01-B01",gameIds:expected,automatedChecks:"passed",browserTesting:"not-run",businessValidation:"pending",releaseDecision:"blocked",reason:"Static validation is not evidence of correct mechanics or browser completion",statuses};
 fs.mkdirSync("qa/reports",{recursive:true});
