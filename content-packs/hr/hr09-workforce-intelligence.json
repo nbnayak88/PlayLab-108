@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr09",
+  "status": "synthetic-prototype",
+  "stream": "HR09",
+  "label": "Workforce Intelligence",
+  "terms": [
+    "People analytics",
+    "Headcount",
+    "Attrition",
+    "Workforce plan",
+    "Metric",
+    "Dashboard",
+    "Data model",
+    "Forecast",
+    "Dimension",
+    "Data quality",
+    "Trend",
+    "Segmentation"
+  ],
+  "descs": [
+    "Insights from people-related data",
+    "Number of active workers",
+    "Rate of workforce exits",
+    "Future workforce supply and demand",
+    "Quantitative performance indicator",
+    "Visual view of measures",
+    "Structure of analytical data",
+    "Estimated future outcome",
+    "Attribute used to group results",
+    "Accuracy and completeness of data",
+    "Direction of change over time",
+    "Grouping by shared attributes"
+  ],
+  "stages": [
+    "Define business question",
+    "Identify measures",
+    "Validate data",
+    "Explore trends",
+    "Model scenarios",
+    "Recommend action"
+  ],
+  "facts": [
+    [
+      "What measures the size of a workforce at a point in time?",
+      "Headcount",
+      "Requisition ID",
+      "Wage type"
+    ],
+    [
+      "What helps understand patterns of workforce exits?",
+      "Attrition analysis",
+      "Color lab",
+      "Data deletion"
+    ],
+    [
+      "What should be checked before using workforce metrics?",
+      "Data quality",
+      "Animations",
+      "Guesswork"
+    ],
+    [
+      "What groups insights by location or department?",
+      "Analytical dimensions",
+      "Room keys",
+      "Clock-in event"
+    ]
+  ],
+  "topics": [
+    "People analytics",
+    "Headcount measures",
+    "Attrition trends",
+    "Workforce planning",
+    "Analytical dimensions",
+    "Data lineage",
+    "Dashboard design",
+    "Scenario forecasts",
+    "Workforce segmentation",
+    "Privacy safeguards",
+    "Data quality",
+    "Executive decisions"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
