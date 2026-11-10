@@ -13,12 +13,12 @@ const info=t=>ctx.message(t);
 const stats=()=>ctx.hud({round:Math.min(round+1,total),total,score:score+bank,extra:id===6?"Lives: "+lives:id===7?"Bank: "+bank:id===9?"Risk remaining: "+boss:id===2?"Lifelines: "+help:"Correct streak: "+streak});
 function finish(win,reason){if(done)return;done=true;ctx.finish(win,reason,Math.max(0,score+bank))}
 function next(ok,points=10){
-if(ok){score+=points;streak++}else{streak=0;score=Math.max(0,score-5);lives--}
+if(ok){if(id!==7)score+=points;streak++}else{streak=0;if(id!==7)score=Math.max(0,score-5);lives--}
 round++;stats();
 if(id===2&&!ok)return finish(false,"Millionaire challenge ended after an incorrect HR architecture decision.");
 if(id===6&&lives<=0)return finish(false,"Three HR decisions were incorrect. Review access, effective dating and governance.");
 if(id===9&&boss<=0)return finish(true,"HR architecture risk eliminated by evidence-based decisions.");
-if(round>=total)return finish(id===8?streak>=3:score+bank>=Math.ceil(total*.7)*10,"Completed "+total+" contextual HR decisions. Score: "+(score+bank));
+if(round>=total)return finish(id===8?streak>=3:id===7?bank>0:score+bank>=Math.ceil(total*.7)*10,"Completed "+total+" contextual HR decisions. Score: "+(score+bank));
 draw();
 }
 function ask(c,points=10,strict=false){
