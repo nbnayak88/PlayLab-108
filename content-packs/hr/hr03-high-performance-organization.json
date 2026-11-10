@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr03",
+  "status": "synthetic-prototype",
+  "stream": "HR03",
+  "label": "High Performance Organization",
+  "terms": [
+    "Goal",
+    "KPI",
+    "Alignment",
+    "Feedback",
+    "Calibration",
+    "Competency",
+    "Performance review",
+    "Continuous performance",
+    "Development goal",
+    "Check-in",
+    "Performance cycle",
+    "Coaching"
+  ],
+  "descs": [
+    "Defined outcome to achieve",
+    "Quantifiable performance measure",
+    "Link between objectives",
+    "Actionable improvement input",
+    "Consistency review of ratings",
+    "Demonstrated capability",
+    "Formal evaluation conversation",
+    "Ongoing observation and feedback",
+    "Targeted growth objective",
+    "Regular performance discussion",
+    "Defined review period",
+    "Support for improved performance"
+  ],
+  "stages": [
+    "Set goals",
+    "Align priorities",
+    "Capture evidence",
+    "Hold check-ins",
+    "Evaluate outcomes",
+    "Agree development actions"
+  ],
+  "facts": [
+    [
+      "What should a measurable goal contain?",
+      "A clear outcome and metric",
+      "Only a title",
+      "Only a color"
+    ],
+    [
+      "What supports continuous improvement?",
+      "Regular actionable feedback",
+      "Annual silence",
+      "Random ranking"
+    ],
+    [
+      "What improves rating consistency?",
+      "Calibration",
+      "Unreviewed assumptions",
+      "Hidden criteria"
+    ],
+    [
+      "What should a performance discussion rely on?",
+      "Documented evidence",
+      "Personal bias",
+      "Guesswork"
+    ]
+  ],
+  "topics": [
+    "Goal alignment",
+    "Performance indicators",
+    "Continuous feedback",
+    "Coaching",
+    "Calibration",
+    "Performance ratings",
+    "Goal cascades",
+    "Competencies",
+    "Team outcomes",
+    "Check-ins",
+    "Review forms",
+    "Fair assessment"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
