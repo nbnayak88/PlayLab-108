@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr02",
+  "status": "synthetic-prototype",
+  "stream": "HR02",
+  "label": "Talent Acquisition",
+  "terms": [
+    "Requisition",
+    "Candidate",
+    "Application",
+    "Job posting",
+    "Talent pipeline",
+    "Interview",
+    "Offer",
+    "Screening",
+    "Recruiting marketing",
+    "Assessment",
+    "Candidate experience",
+    "Selection"
+  ],
+  "descs": [
+    "Approved request for a role",
+    "Person being considered",
+    "Formal expression of interest",
+    "Published opportunity",
+    "Pool of potential hires",
+    "Structured candidate conversation",
+    "Proposed employment terms",
+    "Initial eligibility review",
+    "Outreach to potential applicants",
+    "Evaluation of skills or fit",
+    "Applicant interaction journey",
+    "Evidence-based hiring decision"
+  ],
+  "stages": [
+    "Define workforce need",
+    "Approve requisition",
+    "Attract applicants",
+    "Assess candidates",
+    "Extend offer",
+    "Transition to onboarding"
+  ],
+  "facts": [
+    [
+      "What begins a formally approved hiring request?",
+      "Job requisition",
+      "Payroll run",
+      "Learning item"
+    ],
+    [
+      "What tracks applicants through recruiting steps?",
+      "Candidate pipeline",
+      "Posting document",
+      "Wage type"
+    ],
+    [
+      "What is the purpose of a structured interview?",
+      "Consistent evidence gathering",
+      "Random assignment",
+      "Uncontrolled scoring"
+    ],
+    [
+      "What typically follows an accepted offer?",
+      "Onboarding transition",
+      "Payroll closing",
+      "Succession nomination"
+    ]
+  ],
+  "topics": [
+    "Job requisition",
+    "Candidate pipeline",
+    "Recruiting stages",
+    "Candidate communications",
+    "Interview evaluation",
+    "Offer management",
+    "Recruiting permissions",
+    "Talent sourcing",
+    "Application screening",
+    "Recruiting analytics",
+    "Fair selection",
+    "Recruitment integration"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
