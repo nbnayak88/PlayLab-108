@@ -1,0 +1,51 @@
+name: Validate and deploy PlayLab 108 to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JavaScript and content-pack registry
+        run: |
+          node --check app.js
+          node --check hr-packs.js
+          node - <<'NODE'
+          const fs=require('fs');
+          const registry=JSON.parse(fs.readFileSync('standards/game-registry.json','utf8'));
+          const manifest=JSON.parse(fs.readFileSync('content-packs/hr/manifest.json','utf8'));
+          if(registry.templates.length!==108) throw Error('Expected 108 universal template IDs');
+          if(new Set(registry.templates.map(x=>x.templateId)).size!==108) throw Error('Duplicate game IDs');
+          if(manifest.streams.length!==12) throw Error('Expected 12 HR streams');
+          for(const stream of manifest.streams){
+            const d=JSON.parse(fs.readFileSync(stream.contentPack,'utf8'));
+            if(d.stream!==stream.code||d.terms.length!==12||d.descs.length!==12||d.stages.length!==6||d.facts.length<4) throw Error('Invalid pack: '+stream.code);
+            if(!fs.existsSync(stream.documentation)) throw Error('Missing documentation: '+stream.documentation);
+          }
+          const html=fs.readFileSync('index.html','utf8');
+          for(const x of ['app.js','hr-packs.js','globalProgress','docsLink'])if(!html.includes(x))throw Error('Missing branded hub element '+x);
+          console.log('Validated 108 universal IDs and 12 HR packs.');
+          NODE
+  deploy:
+    needs: validate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
