@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr01",
+  "status": "synthetic-prototype",
+  "stream": "HR01",
+  "label": "AWF Foundations & Core HR",
+  "terms": [
+    "Foundation object",
+    "Position",
+    "Job information",
+    "Personal information",
+    "RBP",
+    "Business rule",
+    "Event reason",
+    "Effective dating",
+    "Workflow",
+    "Employee file",
+    "Organization",
+    "Data model"
+  ],
+  "descs": [
+    "Reusable organizational reference",
+    "Role in organizational structure",
+    "Employment-related attributes",
+    "Person-specific attributes",
+    "Role-based permissions",
+    "Conditional logic",
+    "Reason for employee event",
+    "Time-valid record history",
+    "Approval process",
+    "Employee record view",
+    "Business structure",
+    "Definition of data fields"
+  ],
+  "stages": [
+    "Define organization",
+    "Configure permissions",
+    "Set foundation data",
+    "Configure employee data",
+    "Test transactions",
+    "Validate rules"
+  ],
+  "facts": [
+    [
+      "Which control restricts employee information access?",
+      "Role-based permissions",
+      "Timer",
+      "Randomization"
+    ],
+    [
+      "What represents time-valid changes to employee data?",
+      "Effective dating",
+      "Static image",
+      "Game timer"
+    ],
+    [
+      "What defines shared organizational reference data?",
+      "Foundation object",
+      "UI gradient",
+      "Quiz board"
+    ],
+    [
+      "Which concept evaluates conditions and triggers actions?",
+      "Business rule",
+      "Browser cache",
+      "Badge"
+    ]
+  ],
+  "topics": [
+    "Organizational structures",
+    "Employee master data",
+    "Role-based permissions",
+    "Effective dating",
+    "Position management",
+    "Business rules",
+    "Employee lifecycle",
+    "MDF objects",
+    "Data quality",
+    "Manager self-service",
+    "Workflows",
+    "Integration readiness"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
