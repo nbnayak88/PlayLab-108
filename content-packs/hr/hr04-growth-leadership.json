@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr04",
+  "status": "synthetic-prototype",
+  "stream": "HR04",
+  "label": "Growth & Leadership",
+  "terms": [
+    "Career path",
+    "Mentoring",
+    "Leadership capability",
+    "Succession",
+    "Talent pool",
+    "Development plan",
+    "Mobility",
+    "Readiness",
+    "Potential",
+    "Competency gap",
+    "Career aspiration",
+    "Coaching"
+  ],
+  "descs": [
+    "Possible role progression",
+    "Guidance from an experienced peer",
+    "Skill to lead effectively",
+    "Continuity planning for key roles",
+    "Group of emerging talent",
+    "Structured skill-building actions",
+    "Movement across opportunities",
+    "Ability to assume a role",
+    "Capacity to grow",
+    "Difference between needed and current skill",
+    "Desired future career direction",
+    "Development through structured conversations"
+  ],
+  "stages": [
+    "Assess aspiration",
+    "Map capabilities",
+    "Identify growth gaps",
+    "Plan development",
+    "Explore opportunities",
+    "Review readiness"
+  ],
+  "facts": [
+    [
+      "What connects current role and future possibilities?",
+      "Career path",
+      "Payroll area",
+      "Invoice"
+    ],
+    [
+      "What is a successor readiness assessment intended to estimate?",
+      "Ability to assume a role",
+      "Website clicks",
+      "Random points"
+    ],
+    [
+      "What helps identify learning priorities?",
+      "Competency gap",
+      "Color preference",
+      "Unverified labels"
+    ],
+    [
+      "What is a mentoring relationship?",
+      "Guidance and learning support",
+      "Automated payment",
+      "Time entry"
+    ]
+  ],
+  "topics": [
+    "Career journeys",
+    "Leadership competencies",
+    "Succession pipelines",
+    "Mentoring",
+    "Coaching",
+    "Career mobility",
+    "Potential assessment",
+    "Talent pools",
+    "Development actions",
+    "Readiness levels",
+    "Career conversations",
+    "Growth evidence"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
