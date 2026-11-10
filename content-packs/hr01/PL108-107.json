@@ -1,0 +1,58 @@
+{
+  "gameId": "PL108-107",
+  "stream": "HR01",
+  "title": "Workforce Investment Break-Even Battle",
+  "currency": "INR",
+  "status": "fictional-learning-scenarios",
+  "scenarios": [
+    {
+      "title": "HR self-service rollout",
+      "description": "Reduce recurring HR service requests through employee self-service.",
+      "investment": 1200000,
+      "monthlyVolume": 2500,
+      "currentCost": 160,
+      "proposedCost": 85,
+      "monthlyPlatform": 35000,
+      "targetMonths": 12
+    },
+    {
+      "title": "Recruitment workflow automation",
+      "description": "Automate screening administration and recruiting coordination.",
+      "investment": 900000,
+      "monthlyVolume": 850,
+      "currentCost": 420,
+      "proposedCost": 205,
+      "monthlyPlatform": 28000,
+      "targetMonths": 8
+    },
+    {
+      "title": "Workforce data-quality automation",
+      "description": "Reduce manual correction effort for employee master-data changes.",
+      "investment": 650000,
+      "monthlyVolume": 1900,
+      "currentCost": 115,
+      "proposedCost": 58,
+      "monthlyPlatform": 18000,
+      "targetMonths": 10
+    },
+    {
+      "title": "HR case management modernization",
+      "description": "Replace manual case handling with governed digital workflows.",
+      "investment": 1500000,
+      "monthlyVolume": 3000,
+      "currentCost": 190,
+      "proposedCost": 105,
+      "monthlyPlatform": 46000,
+      "targetMonths": 12
+    }
+  ],
+  "goal": "Choose changes to employee transaction volume, process cost and recurring platform fees to achieve break-even within the target months. Validate ROI and explain trade-offs.",
+  "rules": {
+    "minimumMonthlyVolume": 100,
+    "maximumMonthlyVolume": 10000,
+    "minimumProposedCost": 1,
+    "maximumProposedCost": 1000,
+    "minimumMonthlyPlatform": 0,
+    "maximumMonthlyPlatform": 500000
+  }
+}
