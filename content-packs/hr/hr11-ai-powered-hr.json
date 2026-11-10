@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr11",
+  "status": "synthetic-prototype",
+  "stream": "HR11",
+  "label": "AI-Powered HR",
+  "terms": [
+    "AI agent",
+    "AI skill",
+    "Tool",
+    "Workflow",
+    "Prompt",
+    "Grounding",
+    "Evaluation",
+    "Trace",
+    "Human approval",
+    "Deployment",
+    "Orchestration",
+    "Governance"
+  ],
+  "descs": [
+    "Autonomous task executor",
+    "Reusable AI capability",
+    "External action interface",
+    "Ordered business automation",
+    "Instruction to a model",
+    "Connection to trusted context",
+    "Quality measurement",
+    "Execution record",
+    "Human oversight gate",
+    "Release to target environment",
+    "Coordination of steps",
+    "Controls and accountability"
+  ],
+  "stages": [
+    "Define intent",
+    "Gather requirements",
+    "Specify solution",
+    "Build agent",
+    "Test behavior",
+    "Deploy safely"
+  ],
+  "facts": [
+    [
+      "Which artifact records an AI agent's execution steps?",
+      "Trace",
+      "Payroll area",
+      "Foundation object"
+    ],
+    [
+      "Which control lets a person approve a sensitive action?",
+      "Human approval",
+      "Random seed",
+      "Color palette"
+    ],
+    [
+      "What is a reusable capability for an agent?",
+      "Tool",
+      "Wage type",
+      "Pay group"
+    ],
+    [
+      "What should happen before production release?",
+      "Testing",
+      "Guessing",
+      "Skipping controls"
+    ]
+  ],
+  "topics": [
+    "AI agent",
+    "AI skill",
+    "Tool",
+    "Workflow",
+    "Prompt",
+    "Grounding",
+    "Evaluation",
+    "Trace",
+    "Human approval",
+    "Deployment",
+    "Orchestration",
+    "Governance"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "Universal game mechanics remain unchanged; content requires expert review."
+}
