@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "packId": "successlabs.hr05",
+  "status": "synthetic-prototype",
+  "stream": "HR05",
+  "label": "Rewards & Performance",
+  "terms": [
+    "Compensation",
+    "Pay range",
+    "Merit increase",
+    "Variable pay",
+    "Bonus",
+    "Pay equity",
+    "Eligibility",
+    "Budget",
+    "Reward statement",
+    "Recognition",
+    "Incentive",
+    "Approval"
+  ],
+  "descs": [
+    "Financial reward structure",
+    "Minimum-to-maximum pay band",
+    "Pay change related to contribution",
+    "Performance-dependent reward",
+    "Additional award",
+    "Fairness of pay outcomes",
+    "Rule for participation",
+    "Financial planning limit",
+    "Summary of reward components",
+    "Acknowledgment of contribution",
+    "Motivation-linked reward",
+    "Authorized decision checkpoint"
+  ],
+  "stages": [
+    "Define reward policy",
+    "Check eligibility",
+    "Prepare budget",
+    "Simulate allocations",
+    "Review equity",
+    "Approve and communicate"
+  ],
+  "facts": [
+    [
+      "What prevents a compensation plan exceeding its limit?",
+      "Budget control",
+      "Random draw",
+      "Tile grid"
+    ],
+    [
+      "What is a pay range?",
+      "A defined compensation band",
+      "A payroll date",
+      "An interview phase"
+    ],
+    [
+      "What does pay equity analysis assess?",
+      "Fairness of compensation outcomes",
+      "Website speed",
+      "Character count"
+    ],
+    [
+      "What should occur before communicating approved rewards?",
+      "Authorization and validation",
+      "Unreviewed posting",
+      "Random assignment"
+    ]
+  ],
+  "topics": [
+    "Compensation planning",
+    "Merit budgets",
+    "Pay ranges",
+    "Variable pay",
+    "Eligibility rules",
+    "Reward statements",
+    "Pay equity",
+    "Approval routing",
+    "Recognition",
+    "Budget controls",
+    "Compensation guidelines",
+    "Audit trails"
+  ],
+  "gameTemplates": "../../standards/game-registry.json",
+  "note": "This is a prototype gameplay content pack, not a validated official SAP learning course. Reuse engine without modification."
+}
