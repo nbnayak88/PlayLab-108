@@ -19,6 +19,7 @@ jobs:
         run: |
           node --check app.js
           node --check hr-packs.js
+          node --check engines/quiz-arena.js
           node - <<'NODE'
           const fs=require('fs');
           const registry=JSON.parse(fs.readFileSync('standards/game-registry.json','utf8'));
@@ -26,6 +27,10 @@ jobs:
           if(registry.templates.length!==108) throw Error('Expected 108 universal template IDs');
           if(new Set(registry.templates.map(x=>x.templateId)).size!==108) throw Error('Duplicate game IDs');
           if(manifest.streams.length!==12) throw Error('Expected 12 HR streams');
+          const engine=fs.readFileSync('engines/quiz-arena.js','utf8');
+          for(let n=1;n<=9;n++)if(!engine.includes('for(let n=1;n<=9;n++)'))throw Error('Missing Quiz Arena engine registry');
+          const runtime=fs.readFileSync('app.js','utf8');
+          if(!runtime.includes('window.PLAYLAB_GAME_MODULES[g.templateId]'))throw Error('Runtime does not dispatch dedicated engines');
           for(const stream of manifest.streams){
             const d=JSON.parse(fs.readFileSync(stream.contentPack,'utf8'));
             if(d.stream!==stream.code||d.terms.length!==12||d.descs.length!==12||d.stages.length!==6||d.facts.length<4) throw Error('Invalid pack: '+stream.code);
