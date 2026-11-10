@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0",
+  "stream": "HR01",
+  "gameId": "PL108-001",
+  "title": "Core HR Decision Sprint",
+  "durationMinutes": 5,
+  "passingCorrect": 8,
+  "totalCases": 10,
+  "attempts": 10,
+  "source": "SuccessLabs Academy fictional EC-like scenarios; subject to expert validation",
+  "cases": [
+    {
+      "id": "HR01-D01",
+      "scenario": "A new subsidiary is being established. HR needs reusable legal entity and department reference records before hiring begins.",
+      "correct": "Configure foundation objects",
+      "distractors": [
+        "Create a payroll result",
+        "Send an offer letter"
+      ],
+      "rationale": "Foundation objects define reusable organizational reference data."
+    },
+    {
+      "id": "HR01-D02",
+      "scenario": "A manager should see only employees in their permitted organization. Which control belongs in the solution?",
+      "correct": "Role-based permissions",
+      "distractors": [
+        "A compensation budget",
+        "A holiday calendar"
+      ],
+      "rationale": "RBP controls who can access which employee information."
+    },
+    {
+      "id": "HR01-D03",
+      "scenario": "An employee transfers to another department effective next month. The previous assignment must remain auditable.",
+      "correct": "Create an effective-dated job information change",
+      "distractors": [
+        "Overwrite the original hire record",
+        "Change the person's date of birth"
+      ],
+      "rationale": "Effective dating retains historical job information and the future effective change."
+    },
+    {
+      "id": "HR01-D04",
+      "scenario": "A company wants to track vacant and occupied organizational roles separately from individual employees.",
+      "correct": "Use position management",
+      "distractors": [
+        "Use a personal email field",
+        "Create a wage type"
+      ],
+      "rationale": "Positions represent organizational roles; employee assignment is distinct."
+    },
+    {
+      "id": "HR01-D05",
+      "scenario": "HR requires manager approval before a sensitive employee data change is finalized.",
+      "correct": "Configure a workflow approval",
+      "distractors": [
+        "Publish the change immediately",
+        "Remove permission checks"
+      ],
+      "rationale": "Workflows route transactions to authorized approvers."
+    },
+    {
+      "id": "HR01-D06",
+      "scenario": "A business rule must default a field based on the employee's company while keeping manual corrections governed.",
+      "correct": "Configure and test a business rule",
+      "distractors": [
+        "Ask every employee to edit the database",
+        "Use a random selection"
+      ],
+      "rationale": "Business rules apply conditional logic and require controlled testing."
+    },
+    {
+      "id": "HR01-D07",
+      "scenario": "A hire transaction needs a meaningful business event classification for downstream processing.",
+      "correct": "Maintain the appropriate event reason",
+      "distractors": [
+        "Replace the position ID with a phone number",
+        "Ignore the event type"
+      ],
+      "rationale": "Event reasons classify employee lifecycle changes."
+    },
+    {
+      "id": "HR01-D08",
+      "scenario": "A new HR administrator requires limited access to view employee records, not edit salaries.",
+      "correct": "Assign a least-privilege RBP role",
+      "distractors": [
+        "Give unrestricted administrator access",
+        "Share another person's login"
+      ],
+      "rationale": "Access should be restricted to legitimate responsibilities."
+    },
+    {
+      "id": "HR01-D09",
+      "scenario": "A worker's job history appears incorrect after a transfer. What should be investigated first?",
+      "correct": "Review effective-dated job information records",
+      "distractors": [
+        "Delete the employee profile",
+        "Recreate the legal entity"
+      ],
+      "rationale": "Time slices and effective dates explain historical employment data."
+    },
+    {
+      "id": "HR01-D10",
+      "scenario": "An integration reports that an employee has no valid department reference.",
+      "correct": "Validate the department foundation object and employee assignment",
+      "distractors": [
+        "Increase the quiz timer",
+        "Modify the employee's personal name"
+      ],
+      "rationale": "Reference integrity should be resolved at the authoritative source."
+    },
+    {
+      "id": "HR01-D11",
+      "scenario": "The company plans a bulk update to organizational data. What is the safest next step?",
+      "correct": "Validate the mapping and test in a nonproduction environment",
+      "distractors": [
+        "Import immediately into production",
+        "Disable all audit controls"
+      ],
+      "rationale": "Controlled migration testing reduces integrity and downstream risks."
+    },
+    {
+      "id": "HR01-D12",
+      "scenario": "An HR lead asks for proof that a change was authorized and applied correctly.",
+      "correct": "Review workflow and change history",
+      "distractors": [
+        "Rely only on verbal confirmation",
+        "Remove previous effective-dated entries"
+      ],
+      "rationale": "Approval and audit evidence support governance."
+    }
+  ]
+}
