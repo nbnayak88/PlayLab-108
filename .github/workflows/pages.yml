@@ -18,6 +18,7 @@ jobs:
       - name: Validate JavaScript and content-pack registry
         run: |
           node --check app.js
+          node qa/hr01-batch-01.test.cjs
           node --check hr-packs.js
           node --check engines/quiz-arena.js
           node --check engines/hr01-decision-sprint.js
