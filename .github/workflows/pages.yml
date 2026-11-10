@@ -40,7 +40,7 @@ jobs:
             if(!fs.existsSync(stream.documentation)) throw Error('Missing documentation: '+stream.documentation);
           }
           const html=fs.readFileSync('index.html','utf8');
-          for(const x of ['app.js','hr-packs.js','globalProgress','docsLink','https://successlabsacademy.com/architect-circle','Join Our Free Community'])if(!html.includes(x))throw Error('Missing branded hub element '+x);
+          for(const x of ['app.js','hr-packs.js','globalProgress','docsLink','https://hub.successlabsacademy.com/web/checkout/694af8798dd872a219700dd3','Join Our Free Community'])if(!html.includes(x))throw Error('Missing branded hub element '+x);
           console.log('Validated 108 universal IDs and 12 HR packs.');
           NODE
   deploy:
