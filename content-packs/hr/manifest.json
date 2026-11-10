@@ -1,0 +1,128 @@
+{
+  "version": "1.0.0",
+  "status": "prototype",
+  "count": 12,
+  "gameRegistry": "standards/game-registry.json",
+  "streams": [
+    {
+      "code": "HR01",
+      "title": "AWF Foundations & Core HR",
+      "short": "Core HR",
+      "packKey": "hr01",
+      "slug": "hr01-awf-foundations",
+      "existing": true,
+      "documentation": "examples/sap-successfactors-employee-central/README.md",
+      "contentPack": "content-packs/hr/hr01-awf-foundations.json"
+    },
+    {
+      "code": "HR02",
+      "title": "Talent Acquisition",
+      "short": "Acquisition",
+      "packKey": "hr02",
+      "slug": "hr02-talent-acquisition",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr02-talent-acquisition/README.md",
+      "contentPack": "content-packs/hr/hr02-talent-acquisition.json"
+    },
+    {
+      "code": "HR03",
+      "title": "High Performance Organization",
+      "short": "High Performance",
+      "packKey": "hr03",
+      "slug": "hr03-high-performance-organization",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr03-high-performance-organization/README.md",
+      "contentPack": "content-packs/hr/hr03-high-performance-organization.json"
+    },
+    {
+      "code": "HR04",
+      "title": "Growth & Leadership",
+      "short": "Growth & Leadership",
+      "packKey": "hr04",
+      "slug": "hr04-growth-leadership",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr04-growth-leadership/README.md",
+      "contentPack": "content-packs/hr/hr04-growth-leadership.json"
+    },
+    {
+      "code": "HR05",
+      "title": "Rewards & Performance",
+      "short": "Rewards",
+      "packKey": "hr05",
+      "slug": "hr05-rewards-performance",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr05-rewards-performance/README.md",
+      "contentPack": "content-packs/hr/hr05-rewards-performance.json"
+    },
+    {
+      "code": "HR06",
+      "title": "Learning & Mobility",
+      "short": "Learning",
+      "packKey": "hr06",
+      "slug": "hr06-learning-mobility",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr06-learning-mobility/README.md",
+      "contentPack": "content-packs/hr/hr06-learning-mobility.json"
+    },
+    {
+      "code": "HR07",
+      "title": "Payroll Enterprises",
+      "short": "Payroll",
+      "packKey": "hr07",
+      "slug": "hr07-payroll-enterprises",
+      "existing": true,
+      "documentation": "examples/sap-successfactors-employee-central-payroll/README.md",
+      "contentPack": "content-packs/hr/hr07-payroll-enterprises.json"
+    },
+    {
+      "code": "HR08",
+      "title": "Time & Operations",
+      "short": "Time",
+      "packKey": "hr08",
+      "slug": "hr08-time-operations",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr08-time-operations/README.md",
+      "contentPack": "content-packs/hr/hr08-time-operations.json"
+    },
+    {
+      "code": "HR09",
+      "title": "Workforce Intelligence",
+      "short": "Intelligence",
+      "packKey": "hr09",
+      "slug": "hr09-workforce-intelligence",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr09-workforce-intelligence/README.md",
+      "contentPack": "content-packs/hr/hr09-workforce-intelligence.json"
+    },
+    {
+      "code": "HR10",
+      "title": "Digital Employee Experience",
+      "short": "Digital EX",
+      "packKey": "hr10",
+      "slug": "hr10-digital-experience",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr10-digital-experience/README.md",
+      "contentPack": "content-packs/hr/hr10-digital-experience.json"
+    },
+    {
+      "code": "HR11",
+      "title": "AI-Powered HR",
+      "short": "AI HR",
+      "packKey": "hr11",
+      "slug": "hr11-ai-powered-hr",
+      "existing": true,
+      "documentation": "examples/sap-joule-studio/README.md",
+      "contentPack": "content-packs/hr/hr11-ai-powered-hr.json"
+    },
+    {
+      "code": "HR12",
+      "title": "Connected HR",
+      "short": "Connected HR",
+      "packKey": "hr12",
+      "slug": "hr12-connected-hr",
+      "existing": false,
+      "documentation": "examples/hr-streams/hr12-connected-hr/README.md",
+      "contentPack": "content-packs/hr/hr12-connected-hr.json"
+    }
+  ]
+}
