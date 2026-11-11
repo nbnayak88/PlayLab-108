@@ -1,0 +1,1369 @@
+{
+  "schemaVersion": "1.0",
+  "updatedOn": "2026-11-11",
+  "repository": "nbnayak88/PlayLab-108",
+  "branch": "main",
+  "currentStream": "HR01",
+  "nextStream": "HR02",
+  "sequencePolicy": "Do not advance until all 108 HR01 games have passing execution, browser and SME gates.",
+  "audit": {
+    "registryCount": 108,
+    "families": 12,
+    "registryStatus": "108 specified; registry status is not implementation evidence",
+    "ctaPresentInIndex": true,
+    "workflowReferencesStaticQA": true,
+    "localTestExecution": "blocked: GitHub clone DNS resolution failed",
+    "githubActionsRun": "not-verified",
+    "browserGameplay": "not-run",
+    "subjectExpertValidation": "pending"
+  },
+  "summary": {
+    "releaseCertified": 0,
+    "batch01InQA": 9,
+    "otherGamesNotCertified": 99
+  },
+  "games": [
+    {
+      "gameId": "PL108-001",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-002",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+    },
+    {
+      "gameId": "PL108-003",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+    },
+    {
+      "gameId": "PL108-004",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+    },
+    {
+      "gameId": "PL108-005",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+    },
+    {
+      "gameId": "PL108-006",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+    },
+    {
+      "gameId": "PL108-007",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+    },
+    {
+      "gameId": "PL108-008",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+    },
+    {
+      "gameId": "PL108-009",
+      "phase": "batch-01-qa-pending",
+      "verifiedChecks": [
+        "handler-registration-in-repository",
+        "static-contract-present"
+      ],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending",
+        "static-tests-not-executed-locally"
+      ],
+      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+    },
+    {
+      "gameId": "PL108-010",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-011",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-012",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-013",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-014",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-015",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-016",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-017",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-018",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-019",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-020",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-021",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-022",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-023",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-024",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-025",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-026",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-027",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-028",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-029",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-030",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-031",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-032",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-033",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-034",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-035",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-036",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-037",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-038",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-039",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-040",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-041",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-042",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-043",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-044",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-045",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-046",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-047",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-048",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-049",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-050",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-051",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-052",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-053",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-054",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-055",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-056",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-057",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-058",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-059",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-060",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-061",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-062",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-063",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-064",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-065",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-066",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-067",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-068",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-069",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-070",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-071",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-072",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-073",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-074",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-075",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-076",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-077",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-078",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-079",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-080",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-081",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-082",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-083",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-084",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-085",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-086",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-087",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-088",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-089",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-090",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-091",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-092",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-093",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-094",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-095",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-096",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-097",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-098",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-099",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-100",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-101",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-102",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-103",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-104",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-105",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-106",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-107",
+      "phase": "contextual-prototype",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "browser-gameplay-not-executed",
+        "business-SME-review-pending"
+      ],
+      "lastImplementationCommit": null
+    },
+    {
+      "gameId": "PL108-108",
+      "phase": "not-release-certified",
+      "verifiedChecks": [],
+      "browser": "not-run",
+      "subjectExpert": "pending",
+      "releaseCertified": false,
+      "blockers": [
+        "placeholder-or-mechanics-fidelity-unverified"
+      ],
+      "lastImplementationCommit": null
+    }
+  ]
+}
