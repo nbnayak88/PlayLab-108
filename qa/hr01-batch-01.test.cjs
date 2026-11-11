@@ -25,8 +25,8 @@ const quizEngine=read("engines/hr01-quiz-arena.js");
 const contracts={
  "002 50:50 lifeline":'Use 50:50 lifeline',
  "003 locked Jeopardy tiles":'b.disabled=used.has(key)',
- "004 random wheel selection":'Math.floor(Math.random()*cases.length)',
- "005 true/false choices":'["Appropriate",true]',
+ "004 nonrepeating wheel selection":'wheelUsed.add(ix)',
+ "005 randomized true/false claims":'const truth=Math.random()<0.5',
  "006 life elimination":'lives===0',
  "007 bank scoring":'id===7?bank:score',
  "008 real 3x3 grid":'grid-template-columns:repeat(3',
