@@ -29,6 +29,7 @@ const contracts={
  "005 randomized true/false claims":'const truth=Math.random()<0.5',
  "006 life elimination":'lives===0',
  "007 bank scoring":'id===7?bank:score',
+ "007 minimum stake deadlock protection":'id===7&&bank<10',
  "008 real 3x3 grid":'grid-template-columns:repeat(3',
  "008 bingo line evaluation":'lines(marks)',
  "009 boss HP victory":'hp===0',
