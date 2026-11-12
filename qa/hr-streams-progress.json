@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedOn": "2026-11-11",
+  "updatedOn": "2026-11-12",
   "repository": "nbnayak88/PlayLab-108",
   "branch": "main",
   "currentStream": "HR01",
@@ -12,7 +12,7 @@
     "registryStatus": "108 specified; registry status is not implementation evidence",
     "ctaPresentInIndex": true,
     "workflowReferencesStaticQA": true,
-    "localTestExecution": "blocked: GitHub clone DNS resolution failed",
+    "localTestExecution": "not-run-this-session; static code review only",
     "githubActionsRun": "not-verified",
     "browserGameplay": "not-run",
     "subjectExpertValidation": "pending"
@@ -130,7 +130,8 @@
       "phase": "batch-01-qa-pending",
       "verifiedChecks": [
         "handler-registration-in-repository",
-        "static-contract-present"
+        "static-contract-present",
+        "minimum-stake-deadlock-guard-present"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -138,9 +139,10 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally"
+        "static-tests-not-executed-locally",
+        "dynamic-gameplay-tests-not-executed"
       ],
-      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+      "lastImplementationCommit": "80c9a4fac09d4f082273ea53b226ade1470b1344"
     },
     {
       "gameId": "PL108-008",
@@ -1365,5 +1367,25 @@
       ],
       "lastImplementationCommit": null
     }
-  ]
+  ],
+  "lastRun": {
+    "date": "2026-11-12",
+    "stream": "HR01",
+    "changes": [
+      {
+        "gameId": "PL108-007",
+        "description": "Minimum 10-point wager terminal-state guard prevents unwinnable UI when bank is 1–9 points",
+        "implementationCommit": "80c9a4fac09d4f082273ea53b226ade1470b1344",
+        "testCommit": "ffdb7367064b3eaeb5a0c58c8b1a416f38284008"
+      }
+    ],
+    "tests": {
+      "staticCodeReview": "pass for minimum-stake guard presence",
+      "nodeExecution": "not-run",
+      "githubActions": "not-verified",
+      "browser": "not-run",
+      "SME": "pending"
+    },
+    "next": "Run automated and browser-level gameplay regression for PL108-001–009; keep HR02 blocked."
+  }
 }
