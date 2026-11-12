@@ -21,7 +21,7 @@ function create(ctx){
   streak=ok?streak+1:0;turn++;hud();
   if(id===2&&!ok)return end(false,"Millionaire: an incorrect decision ends the challenge.");
   if(id===6&&lives===0)return end(false,"Eliminated after three incorrect decisions.");
-  if(id===7&&bank<=0)return end(false,"Your points bank is exhausted.");
+  if(id===7&&bank<10)return end(false,"Your points bank is below the minimum 10-point wager.");
   if(id===8&&lines(marks))return end(true,"Bingo! Completed a row, column or diagonal.");
   if(id===9&&hp===0)return end(true,"HR risk boss defeated.");
   if(turn>=max)return end(id===8?false:id===7?bank>=60:id===9?false:id===6?lives>0:id===2?true:score>=Math.ceil(max*.7)*10,
