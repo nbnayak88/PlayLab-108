@@ -23,6 +23,7 @@ assert(runtime.includes('window.PLAYLAB_HR01_GAME_MODULES[g.templateId]'),"HR01 
 // Mechanics-specific release regression gates (static contracts; browser testing is separate).
 const quizEngine=read("engines/hr01-quiz-arena.js");
 const contracts={
+ "008 scenario rotates on retry":'cases[(i+turn)%cases.length]',
  "002 50:50 lifeline":'Use 50:50 lifeline',
  "003 locked Jeopardy tiles":'b.disabled=used.has(key)',
  "004 nonrepeating wheel selection":'wheelUsed.add(ix)',
