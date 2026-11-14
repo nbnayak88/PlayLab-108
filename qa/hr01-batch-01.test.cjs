@@ -20,6 +20,9 @@ assert(html.includes("https://hub.successlabsacademy.com/web/checkout/694af8798d
 const runtime=read("app.js");
 assert(runtime.includes('window.PLAYLAB_HR01_GAME_MODULES[g.templateId]'),"HR01 dispatch missing");
 
+// PL108-001 rapid-fire timer: timeouts must be answered as incorrect and interval cleaned up.
+const rapid=read("engines/hr01-decision-sprint.js");
+for(const fragment of ['remaining=30','clock=setInterval','remaining<=0','"Time expired"','clearClock();answered=true','dispose(){disposed=true;clearClock()}'])assert(rapid.includes(fragment),"PL108-001 timer contract missing: "+fragment);
 // Mechanics-specific release regression gates (static contracts; browser testing is separate).
 const quizEngine=read("engines/hr01-quiz-arena.js");
 const contracts={
