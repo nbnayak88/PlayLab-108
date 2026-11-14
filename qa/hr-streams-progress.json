@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedOn": "2026-11-13",
+  "updatedOn": "2026-11-14",
   "repository": "nbnayak88/PlayLab-108",
   "branch": "main",
   "currentStream": "HR01",
@@ -12,10 +12,17 @@
     "registryStatus": "108 specified; registry status is not implementation evidence",
     "ctaPresentInIndex": true,
     "workflowReferencesStaticQA": true,
-    "localTestExecution": "not-run-this-session; static source inspection only",
+    "localTestExecution": "not-run-this-session; static regression contract added, execution not verified",
     "githubActionsRun": "not-verified",
     "browserGameplay": "not-run",
-    "subjectExpertValidation": "pending"
+    "subjectExpertValidation": "pending",
+    "lastChange": {
+      "gameId": "PL108-001",
+      "description": "30-second timer, timeout feedback and interval cleanup",
+      "implementationCommit": "f83fa79544de11fbc7a43e84c87f7783bf75fb58",
+      "testContractCommit": "6dee6fbc35a20e86b2448762709d4bc9d86994d7",
+      "execution": "not-verified"
+    }
   },
   "summary": {
     "releaseCertified": 0,
@@ -28,7 +35,10 @@
       "phase": "batch-01-qa-pending",
       "verifiedChecks": [
         "handler-registration-in-repository",
-        "static-contract-present"
+        "static-contract-present",
+        "rapid-fire-30-second-timer-source-inspected",
+        "timeout-marks-decision-incorrect-source-inspected",
+        "interval-cleanup-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -36,9 +46,10 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally"
+        "static-tests-not-executed-locally",
+        "timer-browser-behavior-not-tested"
       ],
-      "lastImplementationCommit": null
+      "lastImplementationCommit": "f83fa79544de11fbc7a43e84c87f7783bf75fb58"
     },
     {
       "gameId": "PL108-002",
