@@ -32,7 +32,7 @@ function create(ctx){
   locked=false;prompt.textContent=c.scenario;board.replaceChildren(el("p",c.question||"Choose the best HR architecture decision."));
   const choices=el("div");choices.className="decision-choices";
   const feedback=el("div");feedback.className="decision-feedback";feedback.setAttribute("aria-live","polite");
-  const next=btn("Continue →",()=>progress(feedback.dataset.ok==="true",points),"alt");next.disabled=true;
+  let advanced=false;const next=btn("Continue →",()=>{if(advanced||!locked||done)return;advanced=true;next.disabled=true;progress(feedback.dataset.ok==="true",points)},"alt");next.disabled=true;
   const answers=shuffle([c.correct,...c.distractors]);
   for(const answer of answers)choices.append(btn(answer,()=>{
    if(locked||done)return;locked=true;
