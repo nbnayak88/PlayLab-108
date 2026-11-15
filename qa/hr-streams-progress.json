@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedOn": "2026-11-14",
+  "updatedOn": "2026-11-15",
   "repository": "nbnayak88/PlayLab-108",
   "branch": "main",
   "currentStream": "HR01",
@@ -12,15 +12,24 @@
     "registryStatus": "108 specified; registry status is not implementation evidence",
     "ctaPresentInIndex": true,
     "workflowReferencesStaticQA": true,
-    "localTestExecution": "not-run-this-session; static regression contract added, execution not verified",
+    "localTestExecution": "not-run-this-session; static assertion committed but not executed",
     "githubActionsRun": "not-verified",
     "browserGameplay": "not-run",
     "subjectExpertValidation": "pending",
     "lastChange": {
-      "gameId": "PL108-001",
-      "description": "30-second timer, timeout feedback and interval cleanup",
-      "implementationCommit": "f83fa79544de11fbc7a43e84c87f7783bf75fb58",
-      "testContractCommit": "6dee6fbc35a20e86b2448762709d4bc9d86994d7",
+      "gameIds": [
+        "PL108-002",
+        "PL108-003",
+        "PL108-004",
+        "PL108-005",
+        "PL108-006",
+        "PL108-007",
+        "PL108-008",
+        "PL108-009"
+      ],
+      "description": "One-shot Continue handler prevents duplicate round advances across shared Quiz Arena mechanics",
+      "implementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db",
+      "testContractCommit": "d85e18074a1f24f8804a7f17f77d129638cb1a78",
       "execution": "not-verified"
     }
   },
@@ -56,7 +65,8 @@
       "phase": "batch-01-qa-pending",
       "verifiedChecks": [
         "handler-registration-in-repository",
-        "static-contract-present"
+        "static-contract-present",
+        "one-shot-continue-guard-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -66,14 +76,15 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally"
       ],
-      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
     {
       "gameId": "PL108-003",
       "phase": "batch-01-qa-pending",
       "verifiedChecks": [
         "handler-registration-in-repository",
-        "static-contract-present"
+        "static-contract-present",
+        "one-shot-continue-guard-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -83,14 +94,15 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally"
       ],
-      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
     {
       "gameId": "PL108-004",
       "phase": "batch-01-qa-pending",
       "verifiedChecks": [
         "handler-registration-in-repository",
-        "static-contract-present"
+        "static-contract-present",
+        "one-shot-continue-guard-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -100,14 +112,15 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally"
       ],
-      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
     {
       "gameId": "PL108-005",
       "phase": "batch-01-qa-pending",
       "verifiedChecks": [
         "handler-registration-in-repository",
-        "static-contract-present"
+        "static-contract-present",
+        "one-shot-continue-guard-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -117,14 +130,15 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally"
       ],
-      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
     {
       "gameId": "PL108-006",
       "phase": "batch-01-qa-pending",
       "verifiedChecks": [
         "handler-registration-in-repository",
-        "static-contract-present"
+        "static-contract-present",
+        "one-shot-continue-guard-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -134,7 +148,7 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally"
       ],
-      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
     {
       "gameId": "PL108-007",
@@ -142,7 +156,8 @@
       "verifiedChecks": [
         "handler-registration-in-repository",
         "static-contract-present",
-        "minimum-stake-deadlock-guard-present"
+        "minimum-stake-deadlock-guard-present",
+        "one-shot-continue-guard-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -153,7 +168,7 @@
         "static-tests-not-executed-locally",
         "dynamic-gameplay-tests-not-executed"
       ],
-      "lastImplementationCommit": "80c9a4fac09d4f082273ea53b226ade1470b1344"
+      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
     {
       "gameId": "PL108-008",
@@ -162,7 +177,8 @@
         "handler-registration-in-repository",
         "static-contract-present",
         "bingo-retry-scenario-rotation-source-inspected",
-        "bingo-retry-regression-assertion-added"
+        "bingo-retry-regression-assertion-added",
+        "one-shot-continue-guard-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -173,14 +189,15 @@
         "static-tests-not-executed-locally",
         "gameplay-execution-and-browser-validation-pending"
       ],
-      "lastImplementationCommit": "ca3cc4500887c5872eed26e7dc01c1af09992bec"
+      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
     {
       "gameId": "PL108-009",
       "phase": "batch-01-qa-pending",
       "verifiedChecks": [
         "handler-registration-in-repository",
-        "static-contract-present"
+        "static-contract-present",
+        "one-shot-continue-guard-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -190,7 +207,7 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally"
       ],
-      "lastImplementationCommit": "ff5c0818411c225fe5fade9b4612065514c487a7"
+      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
     {
       "gameId": "PL108-010",
