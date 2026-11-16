@@ -43,6 +43,7 @@ for(const [name,needle] of Object.entries(contracts))assert(quizEngine.includes(
 assert(!quizEngine.includes("score+bank"),"Wager bank must not inflate unrelated game scores");
 assert(quizEngine.includes("if(advanced||!locked||done)return"),"Continue handler must guard duplicate advances");
 assert(quizEngine.includes("advanced=true;next.disabled=true;progress("),"Continue must disable itself before advancing");
+assert(quizEngine.includes('let advanced=false;const next=btn("Continue →",()=>{if(advanced||done)return;advanced=true;next.disabled=true;progress(ok,10)}'),"PL108-005 True/False Continue must guard repeated clicks");
 
 const statuses=Object.fromEntries(expected.map(id=>[id,{schema:"pass",registered:"pass",browser:"not-run",subjectExpert:"pending",release:"blocked"}]));
 const report={generatedAt:new Date().toISOString(),batch:"HR01-B01",gameIds:expected,automatedChecks:"passed",browserTesting:"not-run",businessValidation:"pending",releaseDecision:"blocked",reason:"Static validation is not evidence of correct mechanics or browser completion",statuses};
