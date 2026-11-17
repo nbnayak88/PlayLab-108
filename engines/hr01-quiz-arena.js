@@ -16,7 +16,7 @@ function create(ctx){
   if(done)return;
   if(id!==7)score=Math.max(0,score+(ok?points:-5));
   if(id===7)bank+=ok?points:-points;
-  if(id===9&&ok)hp=Math.max(0,hp-20);
+  if(id===9)hp=ok?Math.max(0,hp-20):Math.min(100,hp+10);
   if(!ok)lives--;
   streak=ok?streak+1:0;turn++;hud();
   if(id===2&&!ok)return end(false,"Millionaire: an incorrect decision ends the challenge.");
@@ -41,6 +41,7 @@ function create(ctx){
    feedback.replaceChildren(el("strong",ok?"Correct decision":"Review this decision"),el("p","Recommended: "+c.correct),el("p","Why: "+c.rationale));
    if(id===8&&ok&&selected>=0)marks[selected]=true;
    if(id===7)feedback.append(el("p","Wager outcome: "+(ok?"+":"−")+points));
+   if(id===9)feedback.append(el("p",ok?"Boss loses 20 HP.":"Boss recovers 10 HP (maximum 100)."));
    next.disabled=false;
   }));
   board.append(choices,feedback,next);
