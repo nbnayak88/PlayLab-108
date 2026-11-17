@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedOn": "2026-11-16",
+  "updatedOn": "2026-11-17",
   "repository": "nbnayak88/PlayLab-108",
   "branch": "main",
   "currentStream": "HR01",
@@ -12,17 +12,17 @@
     "registryStatus": "108 specified; registry status is not implementation evidence",
     "ctaPresentInIndex": true,
     "workflowReferencesStaticQA": true,
-    "localTestExecution": "not-run-this-session; static assertion committed but not executed",
+    "localTestExecution": "not-run-this-session; source contract added but execution unverified",
     "githubActionsRun": "not-verified",
     "browserGameplay": "not-run",
     "subjectExpertValidation": "pending",
     "lastChange": {
       "gameIds": [
-        "PL108-005"
+        "PL108-009"
       ],
-      "description": "Guard True/False Blitz Continue against rapid repeated clicks and duplicate score/round advancement",
-      "implementationCommit": "e1dcfaea4e93c8292badb4411273b1b50e17654b",
-      "testContractCommit": "b61d4ba8f9da2ead6259ed7ab4bfb0c7644dd047",
+      "description": "Boss Battle incorrect answers now restore 10 risk HP (capped at 100), with explicit feedback; correct answers reduce HP by 20",
+      "implementationCommit": "9a606deba1f76486fea93936490d2a54352b9162",
+      "testContractCommit": "307fd1922e16b85df6586d2e361575f2c3576b4c",
       "execution": "not-verified"
     }
   },
@@ -191,7 +191,9 @@
       "verifiedChecks": [
         "handler-registration-in-repository",
         "static-contract-present",
-        "one-shot-continue-guard-source-inspected"
+        "one-shot-continue-guard-source-inspected",
+        "boss-wrong-answer-risk-recovery-source-inspected",
+        "boss-risk-recovery-feedback-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -199,9 +201,10 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally"
+        "static-tests-not-executed-locally",
+        "boss-risk-recovery-dynamic-tests-not-executed"
       ],
-      "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
+      "lastImplementationCommit": "9a606deba1f76486fea93936490d2a54352b9162"
     },
     {
       "gameId": "PL108-010",
