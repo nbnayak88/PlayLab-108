@@ -37,6 +37,8 @@ const contracts={
  "008 real 3x3 grid":'grid-template-columns:repeat(3',
  "008 bingo line evaluation":'lines(marks)',
  "009 boss HP victory":'hp===0',
+ "009 boss risk recovery":'Math.min(100,hp+10)',
+ "009 boss risk feedback":'Boss recovers 10 HP (maximum 100).',
  "single-answer uniqueness":'new Set([c.correct,...c.distractors]'
 };
 for(const [name,needle] of Object.entries(contracts))assert(quizEngine.includes(needle),"Missing mechanics contract: "+name);
