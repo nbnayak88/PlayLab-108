@@ -22,7 +22,7 @@ function create(ctx){
   const heading=node("h3","What should the HR solution architect do?");
   const choices=node("div","");choices.className="decision-choices";
   const feedback=node("div","");feedback.className="decision-feedback";feedback.setAttribute("aria-live","polite");
-  const next=action(position===total-1?"Finish mission":"Continue →",()=>{if(!answered)return;clearClock();position++;if(position>=total){const passed=correct>=8;ctx.finish(passed,(passed?"Business decisions validated. ":"Review the missed decisions and replay. ")+correct+" of "+total+" correct; passing threshold 8.",correct*10);return}render()},"alt");
+  let advanced=false;const next=action(position===total-1?"Finish mission":"Continue →",()=>{if(disposed||!answered||advanced)return;advanced=true;next.disabled=true;clearClock();position++;if(position>=total){disposed=true;const passed=correct>=8;ctx.finish(passed,(passed?"Business decisions validated. ":"Review the missed decisions and replay. ")+correct+" of "+total+" correct; passing threshold 8.",correct*10);return}render()},"alt");
   next.disabled=true;
   shuffle([item.correct,...item.distractors]).forEach(choice=>{
     const b=action(choice,()=>{
