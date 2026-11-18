@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedOn": "2026-11-17",
+  "updatedOn": "2026-11-18",
   "repository": "nbnayak88/PlayLab-108",
   "branch": "main",
   "currentStream": "HR01",
@@ -12,17 +12,17 @@
     "registryStatus": "108 specified; registry status is not implementation evidence",
     "ctaPresentInIndex": true,
     "workflowReferencesStaticQA": true,
-    "localTestExecution": "not-run-this-session; source contract added but execution unverified",
+    "localTestExecution": "not-run-this-session; static regression contract added but execution unverified",
     "githubActionsRun": "not-verified",
     "browserGameplay": "not-run",
     "subjectExpertValidation": "pending",
     "lastChange": {
       "gameIds": [
-        "PL108-009"
+        "PL108-001"
       ],
-      "description": "Boss Battle incorrect answers now restore 10 risk HP (capped at 100), with explicit feedback; correct answers reduce HP by 20",
-      "implementationCommit": "9a606deba1f76486fea93936490d2a54352b9162",
-      "testContractCommit": "307fd1922e16b85df6586d2e361575f2c3576b4c",
+      "description": "Rapid Fire Continue is now one-shot, disabled before round advancement, and finish callback guarded against duplicate invocation",
+      "implementationCommit": "c93236f1f60f31a5926556fb845701c001d8330f",
+      "testContractCommit": "eb4df584412a363ff698b455bb560226e2302f6b",
       "execution": "not-verified"
     }
   },
@@ -40,7 +40,10 @@
         "static-contract-present",
         "rapid-fire-30-second-timer-source-inspected",
         "timeout-marks-decision-incorrect-source-inspected",
-        "interval-cleanup-source-inspected"
+        "interval-cleanup-source-inspected",
+        "rapid-fire-one-shot-continue-source-inspected",
+        "rapid-fire-duplicate-finish-guard-source-inspected",
+        "rapid-fire-continue-regression-assertion-added"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -49,9 +52,10 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "timer-browser-behavior-not-tested"
+        "timer-browser-behavior-not-tested",
+        "rapid-fire-double-click-browser-test-pending"
       ],
-      "lastImplementationCommit": "f83fa79544de11fbc7a43e84c87f7783bf75fb58"
+      "lastImplementationCommit": "c93236f1f60f31a5926556fb845701c001d8330f"
     },
     {
       "gameId": "PL108-002",
