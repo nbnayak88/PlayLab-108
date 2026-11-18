@@ -23,6 +23,10 @@ assert(runtime.includes('window.PLAYLAB_HR01_GAME_MODULES[g.templateId]'),"HR01 
 // PL108-001 rapid-fire timer: timeouts must be answered as incorrect and interval cleaned up.
 const rapid=read("engines/hr01-decision-sprint.js");
 for(const fragment of ['remaining=30','clock=setInterval','remaining<=0','"Time expired"','clearClock();answered=true','dispose(){disposed=true;clearClock()}'])assert(rapid.includes(fragment),"PL108-001 timer contract missing: "+fragment);
+// Rapid Fire Continue must advance exactly once even when clicked repeatedly.
+assert(rapid.includes('if(disposed||!answered||advanced)return'),"PL108-001 must reject repeated Continue clicks");
+assert(rapid.includes('advanced=true;next.disabled=true;clearClock();position++'),"PL108-001 must lock Continue before changing round");
+assert(rapid.includes('disposed=true;const passed=correct>=8'),"PL108-001 must prevent duplicate finish callbacks");
 // Mechanics-specific release regression gates (static contracts; browser testing is separate).
 const quizEngine=read("engines/hr01-quiz-arena.js");
 const contracts={
