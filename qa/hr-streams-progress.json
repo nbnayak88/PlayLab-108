@@ -27,7 +27,7 @@
         "PL108-008",
         "PL108-009"
       ],
-      "description": "Inspected HR01 override and generic Quiz Arena dispatch overlap; documented execution blockers without claiming certification",
+      "description": "Verified HR01 override dispatch precedence in app.js and documented runtime validation blockers; no gameplay certification",
       "implementationCommit": null,
       "testContractCommit": null,
       "execution": "not-run"
@@ -36,19 +36,19 @@
       "inspected": [
         "engines/quiz-arena.js",
         "engines/hr01-quiz-arena.js",
-        "index.html"
+        "index.html",
+        "app.js"
       ],
       "findings": [
         "HR01 Quiz Arena override is registered for PL108-002 through PL108-009",
-        "Generic Quiz Arena also registers PL108-001 through PL108-009 and has different simplified gameplay; confirm dispatch precedence before relying on HR01-specific fixes",
+        "Dispatch precedence verified in app.js: HR01-specific modules take precedence for PL108-002 through PL108-009; generic Quiz Arena is fallback for other streams",
         "HR01 Quiz Arena fetches content-packs/hr01/quiz-arena-002-009.json asynchronously; browser network and gameplay checks remain necessary",
         "Required free-community checkout URL appears in index.html header, gameplay and community sections"
       ],
-      "verification": "GitHub source inspection only; no runtime/browser/SME certification",
+      "verification": "GitHub source inspection only; app.js confirms HR01 override dispatch, but no runtime/browser/SME certification",
       "blockers": [
         "GitHub DNS resolution failed in local execution environment",
         "GitHub Actions status not verified",
-        "Dispatch precedence in app.js not inspected",
         "108-game end-to-end browser and SME validation pending"
       ]
     }
@@ -90,7 +90,8 @@
       "verifiedChecks": [
         "handler-registration-in-repository",
         "static-contract-present",
-        "one-shot-continue-guard-source-inspected"
+        "one-shot-continue-guard-source-inspected",
+        "hr01-engine-dispatch-precedence-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -98,8 +99,7 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally",
-        "engine-dispatch-precedence-not-verified"
+        "static-tests-not-executed-locally"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -109,7 +109,8 @@
       "verifiedChecks": [
         "handler-registration-in-repository",
         "static-contract-present",
-        "one-shot-continue-guard-source-inspected"
+        "one-shot-continue-guard-source-inspected",
+        "hr01-engine-dispatch-precedence-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -117,8 +118,7 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally",
-        "engine-dispatch-precedence-not-verified"
+        "static-tests-not-executed-locally"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -128,7 +128,8 @@
       "verifiedChecks": [
         "handler-registration-in-repository",
         "static-contract-present",
-        "one-shot-continue-guard-source-inspected"
+        "one-shot-continue-guard-source-inspected",
+        "hr01-engine-dispatch-precedence-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -136,8 +137,7 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally",
-        "engine-dispatch-precedence-not-verified"
+        "static-tests-not-executed-locally"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -148,7 +148,8 @@
         "handler-registration-in-repository",
         "static-contract-present",
         "one-shot-continue-guard-source-inspected",
-        "true-false-continue-one-shot-guard-source-inspected"
+        "true-false-continue-one-shot-guard-source-inspected",
+        "hr01-engine-dispatch-precedence-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -156,8 +157,7 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally",
-        "engine-dispatch-precedence-not-verified"
+        "static-tests-not-executed-locally"
       ],
       "lastImplementationCommit": "e1dcfaea4e93c8292badb4411273b1b50e17654b"
     },
@@ -167,7 +167,8 @@
       "verifiedChecks": [
         "handler-registration-in-repository",
         "static-contract-present",
-        "one-shot-continue-guard-source-inspected"
+        "one-shot-continue-guard-source-inspected",
+        "hr01-engine-dispatch-precedence-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -175,8 +176,7 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally",
-        "engine-dispatch-precedence-not-verified"
+        "static-tests-not-executed-locally"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -187,7 +187,8 @@
         "handler-registration-in-repository",
         "static-contract-present",
         "minimum-stake-deadlock-guard-present",
-        "one-shot-continue-guard-source-inspected"
+        "one-shot-continue-guard-source-inspected",
+        "hr01-engine-dispatch-precedence-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -196,8 +197,7 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "dynamic-gameplay-tests-not-executed",
-        "engine-dispatch-precedence-not-verified"
+        "dynamic-gameplay-tests-not-executed"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -209,7 +209,8 @@
         "static-contract-present",
         "bingo-retry-scenario-rotation-source-inspected",
         "bingo-retry-regression-assertion-added",
-        "one-shot-continue-guard-source-inspected"
+        "one-shot-continue-guard-source-inspected",
+        "hr01-engine-dispatch-precedence-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -218,8 +219,7 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "gameplay-execution-and-browser-validation-pending",
-        "engine-dispatch-precedence-not-verified"
+        "gameplay-execution-and-browser-validation-pending"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -231,7 +231,8 @@
         "static-contract-present",
         "one-shot-continue-guard-source-inspected",
         "boss-wrong-answer-risk-recovery-source-inspected",
-        "boss-risk-recovery-feedback-source-inspected"
+        "boss-risk-recovery-feedback-source-inspected",
+        "hr01-engine-dispatch-precedence-source-inspected"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -240,8 +241,7 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "boss-risk-recovery-dynamic-tests-not-executed",
-        "engine-dispatch-precedence-not-verified"
+        "boss-risk-recovery-dynamic-tests-not-executed"
       ],
       "lastImplementationCommit": "9a606deba1f76486fea93936490d2a54352b9162"
     },
