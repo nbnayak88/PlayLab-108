@@ -23,13 +23,13 @@ function create(ctx){
   if(id===6&&lives===0)return end(false,"Eliminated after three incorrect decisions.");
   if(id===7&&bank<10)return end(false,"Your points bank is below the minimum 10-point wager.");
   if(id===8&&lines(marks))return end(true,"Bingo! Completed a row, column or diagonal.");
-  if(id===9&&hp===0)return end(true,"HR risk boss defeated.");
+  if(id===9&&hp===0)return end(true,"Risk boss defeated.");
   if(turn>=max)return end(id===8?false:id===7?bank>=60:id===9?false:id===6?lives>0:id===2?true:score>=Math.ceil(max*.7)*10,
-   id===8?"No bingo line completed.":id===7?"Bank "+bank+" / target 60.":id===9?"Boss survived with "+hp+" HP.":"Completed "+turn+" HR decisions; score "+totalScore()+".");
+   id===8?"No bingo line completed.":id===7?"Bank "+bank+" / target 60.":id===9?"Boss survived with "+hp+" HP.":"Completed "+turn+" decisions; score "+totalScore()+".");
   render();
  };
  const question=(c,points=10)=>{
-  locked=false;prompt.textContent=c.scenario;board.replaceChildren(el("p",c.question||"Choose the best HR architecture decision."));
+  locked=false;prompt.textContent=c.scenario;board.replaceChildren(el("p",c.question||"Choose the best decision."));
   const choices=el("div");choices.className="decision-choices";
   const feedback=el("div");feedback.className="decision-feedback";feedback.setAttribute("aria-live","polite");
   let advanced=false;const next=btn("Continue →",()=>{if(advanced||!locked||done)return;advanced=true;next.disabled=true;progress(feedback.dataset.ok==="true",points)},"alt");next.disabled=true;
@@ -52,7 +52,7 @@ function create(ctx){
   const c=cases[turn%cases.length];
   if(id===2){prompt.textContent="Millionaire · Level "+(turn+1)+"/7";board.append(el("p","One wrong answer ends the run. A single 50:50 lifeline is available."),btn("Start level",()=>question(c,10)));return}
   if(id===3){prompt.textContent="Jeopardy · Select a remaining category and stake";const cats=["Employee lifecycle","Data governance","Security & workflow"];for(let i=0;i<3;i++)for(let j=0;j<3;j++){const key=i*3+j;const b=btn(cats[i]+" · "+(j+1)*100,()=>{if(used.has(key))return;used.add(key);question(cases[key%cases.length],(j+1)*10)});b.disabled=used.has(key);board.append(b)}return}
-  if(id===4){prompt.textContent="Quiz Wheel · Spin to select a challenge";board.append(btn("🎡 Spin wheel",()=>{if(wheelUsed.size===cases.length)wheelUsed.clear();const available=cases.map((_,i)=>i).filter(i=>!wheelUsed.has(i));const ix=available[Math.floor(Math.random()*available.length)];wheelUsed.add(ix);ctx.message("Wheel landed on HR challenge "+(ix+1));question(cases[ix])}));return}
+  if(id===4){prompt.textContent="Quiz Wheel · Spin to select a challenge";board.append(btn("🎡 Spin wheel",()=>{if(wheelUsed.size===cases.length)wheelUsed.clear();const available=cases.map((_,i)=>i).filter(i=>!wheelUsed.has(i));const ix=available[Math.floor(Math.random()*available.length)];wheelUsed.add(ix);ctx.message("Wheel landed on challenge "+(ix+1));question(cases[ix])}));return}
   if(id===5){prompt.textContent="True / False Blitz";const truth=Math.random()<0.5,claim=truth?c.correct:c.distractors[Math.floor(Math.random()*c.distractors.length)];board.append(el("p",c.scenario),el("p","Proposed solution: "+claim));let answered=false;for(const [label,value] of [["Appropriate",true],["Inappropriate",false]])board.append(btn(label,()=>{if(answered||done)return;answered=true;const ok=value===truth;let advanced=false;const next=btn("Continue →",()=>{if(advanced||done)return;advanced=true;next.disabled=true;progress(ok,10)},"alt");board.replaceChildren(el("p",ok?"Correct.":"Incorrect."),el("p","Recommended: "+c.correct),el("p",c.rationale),next)}));return}
   if(id===6){prompt.textContent="Last Learner Standing · "+lives+" lives";question(c);return}
   if(id===7){prompt.textContent="Risk Your Points · Bank "+bank;board.append(el("p","Choose a stake. Correct +stake; incorrect −stake. Goal: 60 points."));for(const stake of [10,20,30]){const b=btn("Wager "+stake,()=>question(c,stake));b.disabled=stake>bank;board.append(b)}return}
