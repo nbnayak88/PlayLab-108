@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedOn": "2026-11-21",
+  "updatedOn": "2026-11-22",
   "repository": "nbnayak88/PlayLab-108",
   "branch": "main",
   "currentStream": "HR01",
@@ -12,8 +12,8 @@
     "registryStatus": "108 specified; registry status is not implementation evidence",
     "ctaPresentInIndex": true,
     "workflowReferencesStaticQA": true,
-    "localTestExecution": "blocked: local git ls-remote failed DNS resolution of github.com on 2026-11-21; no local Node regression execution",
-    "githubActionsRun": "verified: successful push workflow https://github.com/nbnayak88/PlayLab-108/actions/runs/44662744008 for bb9374adbfc5fe7cba308a844385e62dd9793f06; another run cancelled; individual test steps not independently verified",
+    "localTestExecution": "not executed in this run; prior local DNS failure on 2026-11-21; GitHub connector source inspection available",
+    "githubActionsRun": "verified: run 44662744008 succeeded for Jekyll build and Pages deploy only; no Node regression test step in job list",
     "browserGameplay": "not-run",
     "subjectExpertValidation": "pending",
     "lastChange": {
@@ -74,7 +74,7 @@
       "scope": "HR01 only; workflow and test contract inspection",
       "checks": [
         {
-          "name": "main branch GitHub Actions workflow",
+          "name": "GitHub Pages build/deploy workflow (not Node QA)",
           "result": "success",
           "runUrl": "https://github.com/nbnayak88/PlayLab-108/actions/runs/44662744008",
           "commit": "bb9374adbfc5fe7cba308a844385e62dd9793f06"
@@ -103,6 +103,86 @@
         "No local Node regression execution due to DNS",
         "No browser gameplay evidence",
         "No HR SME validation"
+      ],
+      "releaseCertified": 0
+    },
+    "engineReview20261122": {
+      "scope": "HR01 only; direct GitHub source and Actions job inspection",
+      "workflowRun": "https://github.com/nbnayak88/PlayLab-108/actions/runs/44662744008",
+      "workflowEvidence": [
+        {
+          "job": "build",
+          "result": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "result": "success"
+            },
+            {
+              "name": "Pull ghcr.io/actions/jekyll-build-pages:v1.0.13",
+              "result": "success"
+            },
+            {
+              "name": "Checkout",
+              "result": "success"
+            },
+            {
+              "name": "Setup Pages",
+              "result": "success"
+            },
+            {
+              "name": "Build with Jekyll",
+              "result": "success"
+            },
+            {
+              "name": "Upload artifact",
+              "result": "success"
+            },
+            {
+              "name": "Post Checkout",
+              "result": "success"
+            },
+            {
+              "name": "Complete job",
+              "result": "success"
+            }
+          ]
+        },
+        {
+          "job": "deploy",
+          "result": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "result": "success"
+            },
+            {
+              "name": "Deploy to GitHub Pages",
+              "result": "success"
+            },
+            {
+              "name": "Complete job",
+              "result": "success"
+            }
+          ]
+        }
+      ],
+      "conclusion": "Successful Jekyll build and GitHub Pages deployment only; this workflow does not show execution of qa/hr01-batch-01.test.cjs or Node regression tests.",
+      "testContract": {
+        "path": "qa/hr01-batch-01.test.cjs",
+        "result": "source-inspected-not-executed",
+        "checks": "Nine HR01 handler registrations, content case contracts, engine static fragments, CTA source, and dispatch wiring; writes qa/reports/hr01-batch-01.json when run."
+      },
+      "cta": {
+        "path": "index.html",
+        "sourceOccurrences": 3,
+        "result": "source-present-live-checkout-not-tested"
+      },
+      "blockers": [
+        "No executed Node regression evidence",
+        "No browser gameplay evidence",
+        "No HR SME validation",
+        "99 additional games lack release evidence"
       ],
       "releaseCertified": 0
     }
@@ -134,7 +214,8 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
         "timer-browser-behavior-not-tested",
-        "rapid-fire-double-click-browser-test-pending"
+        "rapid-fire-double-click-browser-test-pending",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "c93236f1f60f31a5926556fb845701c001d8330f"
     },
@@ -154,7 +235,8 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally"
+        "static-tests-not-executed-locally",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -174,7 +256,8 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally"
+        "static-tests-not-executed-locally",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -194,7 +277,8 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally"
+        "static-tests-not-executed-locally",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -215,7 +299,8 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally"
+        "static-tests-not-executed-locally",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "e1dcfaea4e93c8292badb4411273b1b50e17654b"
     },
@@ -235,7 +320,8 @@
       "blockers": [
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
-        "static-tests-not-executed-locally"
+        "static-tests-not-executed-locally",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -257,7 +343,8 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "dynamic-gameplay-tests-not-executed"
+        "dynamic-gameplay-tests-not-executed",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -280,7 +367,8 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "gameplay-execution-and-browser-validation-pending"
+        "gameplay-execution-and-browser-validation-pending",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -303,7 +391,8 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "boss-risk-recovery-dynamic-tests-not-executed"
+        "boss-risk-recovery-dynamic-tests-not-executed",
+        "github-pages-ci-does-not-run-node-regressions"
       ],
       "lastImplementationCommit": "9a606deba1f76486fea93936490d2a54352b9162"
     },
