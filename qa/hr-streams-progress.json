@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedOn": "2026-11-22",
+  "updatedOn": "2026-11-23",
   "repository": "nbnayak88/PlayLab-108",
   "branch": "main",
   "currentStream": "HR01",
@@ -13,7 +13,7 @@
     "ctaPresentInIndex": true,
     "workflowReferencesStaticQA": true,
     "localTestExecution": "not executed in this run; prior local DNS failure on 2026-11-21; GitHub connector source inspection available",
-    "githubActionsRun": "verified: run 44662744008 succeeded for Jekyll build and Pages deploy only; no Node regression test step in job list",
+    "githubActionsRun": "Previous Pages-only success verified; dedicated HR01 Node workflow added 2026-11-23, execution status pending",
     "browserGameplay": "not-run",
     "subjectExpertValidation": "pending",
     "lastChange": {
@@ -185,6 +185,24 @@
         "99 additional games lack release evidence"
       ],
       "releaseCertified": 0
+    },
+    "engineReview20261123": {
+      "scope": "HR01 only; add dedicated Node static regression GitHub Actions workflow",
+      "workflowPath": ".github/workflows/hr01-qa.yml",
+      "workflowCommit": "2c8f55a5c356cddbe9e25d1790a147ee330ccd8b",
+      "verifiedChecks": [
+        "workflow file successfully committed on main",
+        "workflow invokes node qa/hr01-batch-01.test.cjs",
+        "workflow configured for main push and manual dispatch",
+        "workflow uploads generated static report artifact if present"
+      ],
+      "execution": "pending: workflow job status not yet verified",
+      "limitations": [
+        "Static regression assertions do not certify browser mechanics",
+        "HR SME validation pending",
+        "Remaining 99 HR01 games not certified"
+      ],
+      "releaseCertified": 0
     }
   },
   "summary": {
@@ -215,7 +233,7 @@
         "static-tests-not-executed-locally",
         "timer-browser-behavior-not-tested",
         "rapid-fire-double-click-browser-test-pending",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "c93236f1f60f31a5926556fb845701c001d8330f"
     },
@@ -236,7 +254,7 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -257,7 +275,7 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -278,7 +296,7 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -300,7 +318,7 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "e1dcfaea4e93c8292badb4411273b1b50e17654b"
     },
@@ -321,7 +339,7 @@
         "browser-gameplay-not-executed",
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -344,7 +362,7 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
         "dynamic-gameplay-tests-not-executed",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -368,7 +386,7 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
         "gameplay-execution-and-browser-validation-pending",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "0aebb1bc98e763571b472be2ff432cad38f772db"
     },
@@ -392,7 +410,7 @@
         "business-SME-review-pending",
         "static-tests-not-executed-locally",
         "boss-risk-recovery-dynamic-tests-not-executed",
-        "github-pages-ci-does-not-run-node-regressions"
+        "dedicated-node-ci-execution-pending"
       ],
       "lastImplementationCommit": "9a606deba1f76486fea93936490d2a54352b9162"
     },
