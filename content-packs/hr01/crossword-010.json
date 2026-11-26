@@ -1,0 +1,30 @@
+{
+  "stream": "HR01",
+  "gameId": "PL108-010",
+  "entries": [
+    {
+      "id": "1A",
+      "row": 0,
+      "col": 0,
+      "direction": "across",
+      "answer": "POSITION",
+      "clue": "An organizational seat that can exist independently of its incumbent."
+    },
+    {
+      "id": "1D",
+      "row": 0,
+      "col": 0,
+      "direction": "down",
+      "answer": "PERSON",
+      "clue": "The individual represented by a core HR person record."
+    },
+    {
+      "id": "2A",
+      "row": 3,
+      "col": 0,
+      "direction": "across",
+      "answer": "STRUCTURE",
+      "clue": "The arrangement of organizational units and reporting relationships."
+    }
+  ]
+}
