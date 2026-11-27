@@ -59,6 +59,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Apply and validate SLA sticky certification CTA v2
+        run: |
+          python3 tools/sla-cta/inject.py .
+          python3 tools/sla-cta/inject.py . --check
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .
