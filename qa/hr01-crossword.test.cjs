@@ -1,0 +1,17 @@
+"use strict";
+const assert=require("node:assert/strict");
+const {PlayLabCrossword:{create}}=require("../engines/word-arena-crossword.js");
+const pack=require("../content-packs/hr01/crossword-010.json");
+const check=(name,fn)=>{assert.ok(fn(),name);console.log("PASS",name);};
+const rejects=fn=>{try{fn();return false;}catch{return true;}};
+const puzzle=create(pack.entries);
+check("unique cells",()=>puzzle.keys().length===21);
+check("initial incomplete",()=>!puzzle.check().complete);
+check("invalid cell",()=>!puzzle.set("99,99","A"));
+check("multiple characters",()=>!puzzle.set("0,0","AB"));
+check("lowercase accepted",()=>puzzle.set("0,0","p"));
+check("correct count",()=>puzzle.check().correct===1);
+check("completion",()=>{for(const e of pack.entries) [...e.answer].forEach((c,k)=>puzzle.set((e.row+(e.direction==="down"?k:0))+","+(e.col+(e.direction==="across"?k:0)),c));return puzzle.check().complete;});
+check("reset",()=>{puzzle.reset();return puzzle.check().correct===0&&!puzzle.check().complete;});
+check("disconnected",()=>rejects(()=>create([pack.entries[0],{...pack.entries[1],row:20}])));
+check("conflicting crossing",()=>rejects(()=>create([pack.entries[0],{...pack.entries[1],answer:"XERSON"}])));
