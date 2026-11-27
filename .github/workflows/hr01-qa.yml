@@ -25,6 +25,8 @@ jobs:
           node-version: '22'
       - name: Run HR01 Batch 01 static regression tests
         run: node qa/hr01-batch-01.test.cjs
+      - name: Run HR01 crossword model regression tests
+        run: node qa/hr01-crossword.test.cjs
       - name: Upload static QA evidence
         if: always()
         uses: actions/upload-artifact@v4
