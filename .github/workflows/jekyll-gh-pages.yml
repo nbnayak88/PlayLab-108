@@ -35,6 +35,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Apply and validate SLA sticky certification CTA v2
+        run: |
+          python3 tools/sla-cta/inject.py _site
+          python3 tools/sla-cta/inject.py _site --check
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
