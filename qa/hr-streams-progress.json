@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedOn": "2026-11-26",
+  "updatedOn": "2026-11-27",
   "repository": "nbnayak88/PlayLab-108",
   "branch": "main",
   "currentStream": "HR01",
@@ -259,6 +259,35 @@
       },
       "next": "Persist model regression tests, integrate crossword UI and dispatch without enabling until validated",
       "releaseCertified": 0
+    },
+    "crosswordRegression20261127": {
+      "stream": "HR01",
+      "gameId": "PL108-010",
+      "passed": 10,
+      "failed": 0,
+      "execution": "V8 with module adapter; native Node and Actions not verified",
+      "cta": "3 exact href occurrences in current index.html; live not tested",
+      "previousRun": {
+        "date": "2026-11-26",
+        "stream": "HR01",
+        "changes": [
+          {
+            "gameId": "PL108-010",
+            "implementationCommit": "a0b99b79628381b35430eb0cd953fc1ea14a6c08",
+            "contentCommit": "aefccc23f007539e5b5ebf4ad78357ad3a90ccc1"
+          }
+        ],
+        "tests": {
+          "V8ModelAssertions": "10 passed, 0 failed",
+          "nativeNode": "not-run",
+          "githubActions": "not-verified",
+          "browser": "not-run",
+          "SME": "pending",
+          "CTA": "not retested"
+        },
+        "next": "Persist model regression tests, integrate crossword UI and dispatch without enabling until validated",
+        "releaseCertified": 0
+      }
     }
   },
   "summary": {
@@ -493,7 +522,8 @@
       "phase": "not-release-certified",
       "verifiedChecks": [
         "2026-11-25-registry-and-shared-word-fallback-inspected",
-        "2026-11-26 crossword model: 10 V8 assertions passed against HR01 pack"
+        "2026-11-26 crossword model: 10 V8 assertions passed against HR01 pack",
+        "2026-11-27: 10 crossword model assertions rerun in V8; 10 passed, 0 failed; persistent Node test and CI step committed"
       ],
       "browser": "not-run",
       "subjectExpert": "pending",
@@ -503,7 +533,9 @@
         "distinct-word-arena-mechanics-not-implemented-in-inspected-fallback",
         "crossword UI and dispatch not integrated; native CI/browser/SME pending"
       ],
-      "lastImplementationCommit": "a0b99b79628381b35430eb0cd953fc1ea14a6c08"
+      "lastImplementationCommit": "a0b99b79628381b35430eb0cd953fc1ea14a6c08",
+      "testCommit": "79c623f3ce32559fb2d1fa2c19ab4685d17e990c",
+      "workflowCommit": "53a12c452b213f54c56423f9a9590b04bc1b6170"
     },
     {
       "gameId": "PL108-011",
@@ -1708,13 +1740,13 @@
     }
   ],
   "lastRun": {
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "stream": "HR01",
     "changes": [
       {
         "gameId": "PL108-010",
-        "implementationCommit": "a0b99b79628381b35430eb0cd953fc1ea14a6c08",
-        "contentCommit": "aefccc23f007539e5b5ebf4ad78357ad3a90ccc1"
+        "testCommit": "79c623f3ce32559fb2d1fa2c19ab4685d17e990c",
+        "workflowCommit": "53a12c452b213f54c56423f9a9590b04bc1b6170"
       }
     ],
     "tests": {
@@ -1723,9 +1755,9 @@
       "githubActions": "not-verified",
       "browser": "not-run",
       "SME": "pending",
-      "CTA": "not retested"
+      "CTA": "source present 3 times; live not tested"
     },
-    "next": "Persist model regression tests, integrate crossword UI and dispatch without enabling until validated",
+    "next": "Integrate crossword UI and dispatch, verify native CI and browser before certification",
     "releaseCertified": 0
   }
 }
